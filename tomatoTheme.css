@@ -1,0 +1,14 @@
+::selection {
+    background: tomato
+}
+
+::-moz-selection {
+    background: tomato
+}
+
+.irs-single {background: tomato}
+
+[class|="irs-bar"] {
+    background: tomato;
+    border: tomato
+}

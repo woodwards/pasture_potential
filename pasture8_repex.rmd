@@ -1,0 +1,147 @@
+---
+title: "Pasture Repex"
+runtime: shiny
+output: html_document
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r input_pane, echo=FALSE, eval=TRUE}
+
+my <- list(season_here=list("2015", "2016", "2017"), 
+                     season_default=list("2017"), 
+                     season=list(NA),
+                     soil_here=list("Red", "Blue", "Green"), 
+                     soil_default=list("Blue"), 
+                     soil=list(NA),
+                     elev_here=list("Low", "Medium", "High"), 
+                     elev_default=list("Low"), 
+                     elev=list(NA),
+                     recalc=0L
+                     )
+
+my <- reactiveValues(season_here=list("2015", "2016", "2017"), 
+                     season_default=list("2017"), 
+                     season=list(NA),
+                     soil_here=list("Red", "Blue", "Green"), 
+                     soil_default=list("Blue"), 
+                     soil=list(NA),
+                     elev_here=list("Low", "Medium", "High"), 
+                     elev_default=list("Low"), 
+                     elev=list(NA),
+                     recalc=0L
+                     )
+
+output$season_selector <- renderUI({
+  cat(file=stderr(), paste("render season selector"), "\n")
+  selectInput("season", h4("Season?"), my$season_here, selected=my$season_default)
+})
+
+output$soil_selector <- renderUI({
+  cat(file=stderr(), paste("render soil selector"), "\n")
+  selectInput("soil", h4("Soils?"), my$soil_here, selected=my$soil_default, 
+              selectize=FALSE, multiple=TRUE)
+})
+
+output$elev_selector <- renderUI({
+  cat(file=stderr(), paste("render elev selector"), "\n")
+  selectInput("elev", h4("Elevation?"), my$elev_here, selected=my$elev_default)
+})
+
+sidebarLayout(
+  
+  sidebarPanel(
+    cat(file=stderr(), paste("render sidebar"), "\n"),
+    uiOutput("season_selector"), # this control is created in the server
+    uiOutput("soil_selector"), # this control is created in the server
+    uiOutput("elev_selector") # this control is created in the server
+  ), # end sidebarPanel
+  
+  mainPanel(
+    cat(file=stderr(), paste("render main panel"), "\n")
+    # empty in this example
+  ), # end mainPanel
+  
+  position="right"
+  
+) # end sidebarLayout
+
+observeEvent(input$season, {
+  req(input$season, input$season!="NA")
+  my$season <- input$season
+})
+
+observeEvent(my$season, {
+
+  cat(file=stderr(), "\n")
+  cat(file=stderr(), paste("change of my$season =", my$season), "\n")
+  req(my$season, my$season!="NA")
+
+  my$soil_here <- as.list(sample(c("White", "Yellow", "Green", "Red", "Blue", "Grey"), 4))
+  my$soil_default <- my$soil_here
+  my$soil <- my$soil_default 
+
+}) # end reaction to season changing
+
+observeEvent(input$soil, {
+  req(input$soil, input$soil!="NA")
+  my$soil <- input$soil
+})
+
+observeEvent(my$soil, {
+  
+  cat(file=stderr(), "\n")
+  cat(file=stderr(), paste("change of my$soil = "))
+  cat(file=stderr(), paste(my$soil), "\n")
+  req(my$soil, my$soil!="NA")
+  
+  my$elev_default <- sample(my$elev_here, 1)
+  my$elev <- my$elev_default 
+
+}) # end reaction to soil changing
+
+observeEvent(input$elev,  {
+  req(input$elev, input$elev!="NA")
+  my$elev <-  input$elev
+})
+
+observeEvent(my$elev,  {
+
+  cat(file=stderr(), "\n")
+  cat(file=stderr(), paste("change of my$elev =", my$elev), "\n")
+  req(my$elev, my$elev!="NA")
+
+  my$recalc <- my$recalc + 1L # trigger recalc
+  
+})
+
+calc <- eventReactive(my$recalc,  {
+
+  req(my$season!="NA", my$soil!="NA", my$elev!="NA")
+  req(my$season, my$soil, my$elev)
+  
+  cat(file=stderr(), "\n")
+  cat(file=stderr(), paste("analyse for season =", my$season), "\n")
+  cat(file=stderr(), paste("analyse for soil ="), paste(my$soil), "\n")
+  cat(file=stderr(), paste("analyse for elev =", my$elev), "\n")
+
+  result <- paste(my$recalc, "=", my$season, paste(my$soil, collapse="+"), my$elev)
+  cat(file=stderr(), paste("result ", result), "\n")
+  
+  result
+
+}) # end reaction to elev changing, calculation of calc <- list(results)
+
+output$the_output <- renderText(calc()) 
+  
+# show histogram
+fluidPage({
+    fluidRow(
+      textOutput("the_output")
+    ) # end fluidRow
+}) # end fluidPage
+
+```
+

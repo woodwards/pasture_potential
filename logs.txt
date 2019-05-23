@@ -1,0 +1,1501 @@
+2018-04-05T23:10:20.494964+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:10:20.471187+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:10:20.494738+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:10:20.471220+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.495549+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:10:20.471466+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:10:20.495991+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:10:20.471980+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:10:20.496019+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.472724+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:10:20.553424+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:10:20.473096+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:10:20.473105+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.493927+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:10:20.493984+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:10:20.493986+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.494194+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:10:20.472157+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:10:20.527599+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:10:20.833109+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:10:20.866963+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:10:20.867216+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:10:20.866992+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.866990+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:10:20.867773+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:10:20.867966+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:10:20.868541+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:10:20.869412+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.868978+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:10:20.869401+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:10:20.886469+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:10:20.886528+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:10:20.886530+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.886752+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:10:20.887277+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:10:20.887468+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:10:20.888470+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:10:20.888041+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:10:20.888492+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.974101+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:10:20.974155+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:10:20.974157+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.974349+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.975085+00:00 shinyapps[316507]: output file: /tmp/RtmpyoBWvb/pasture16.knit.md
+2018-04-05T23:10:20.975086+00:00 shinyapps[316507]: 
+2018-04-05T23:10:20.993187+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/RtmpyoBWvb/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/RtmpyoBWvb/file31523bd1800.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/RtmpyoBWvb/file31523bd1800_files/style.css 
+2018-04-05T23:10:21.074542+00:00 shinyapps[316507]: 
+2018-04-05T23:10:21.074546+00:00 shinyapps[316507]: Output created: /tmp/RtmpyoBWvb/file31523bd1800.html
+2018-04-05T23:10:22.924052+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:10:22.924155+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:10:22.925516+00:00 shinyapps[316507]: 
+2018-04-05T23:10:22.925600+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:10:22.927664+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:10:22.927784+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:10:22.928966+00:00 shinyapps[316507]: 
+2018-04-05T23:10:22.929062+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:10:22.931992+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:10:22.932112+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:10:22.933275+00:00 shinyapps[316507]: 
+2018-04-05T23:10:22.933368+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:10:22.934567+00:00 shinyapps[316507]: 
+2018-04-05T23:10:22.934652+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:10:26.884038+00:00 shinyapps[316507]: 
+2018-04-05T23:10:26.884127+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:10:26.885247+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:10:26.975704+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:10:26.892600+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:10:26.973745+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:10:27.115467+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:10:27.115625+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:10:27.115696+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:10:27.115762+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:10:26.981503+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:10:27.115350+00:00 shinyapps[316507]: 
+2018-04-05T23:10:27.115544+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:10:27.137444+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:10:27.141181+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:10:27.147927+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.3275607507955 yqr1 = 13.4734959292046 
+2018-04-05T23:10:27.152081+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:10:27.158628+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.0400282248996 yqr1 = 13.7610284551004 
+2018-04-05T23:10:27.167857+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:10:27.178299+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.497542402176 yqr1 = 15.578625317824 
+2018-04-05T23:10:27.183102+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:10:28.963366+00:00 shinyapps[316507]: 
+2018-04-05T23:10:28.964217+00:00 shinyapps[316507]: 
+2018-04-05T23:10:28.963460+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:10:28.969908+00:00 shinyapps[316507]: 
+2018-04-05T23:10:28.964285+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:10:28.969989+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:10:28.970770+00:00 shinyapps[316507]: 
+2018-04-05T23:10:28.970837+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:13:40.516293+00:00 shinyapps[316507]: 
+2018-04-05T23:13:40.516296+00:00 shinyapps[316507]: observed map_click 
+2018-04-05T23:13:40.583820+00:00 shinyapps[316507]: 
+2018-04-05T23:13:40.584003+00:00 shinyapps[316507]: observed location = 175.419525144389 -37.7532354307601 
+2018-04-05T23:13:42.617369+00:00 shinyapps[316507]: yqr1 = 14.8285344418 yqr1 = 14.2514811418325 yqr1 = 15.4055877417674 
+2018-04-05T23:13:42.621383+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:13:42.628256+00:00 shinyapps[316507]: yqr1 = 14.8285344418 yqr1 = 14.0326882767988 yqr1 = 15.6243806068012 
+2018-04-05T23:13:42.638427+00:00 shinyapps[316507]: yqr1 = 14.42701918 yqr1 = 13.8118561257787 yqr1 = 15.0421822342213 
+2018-04-05T23:13:42.632591+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:13:42.643260+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:13:42.802335+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:13:42.724998+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:13:42.815481+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:13:42.824511+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:13:42.833443+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:13:43.316093+00:00 shinyapps[316507]: observed input$soil = B G L M N O R Z 
+2018-04-05T23:13:43.316006+00:00 shinyapps[316507]: 
+2018-04-05T23:13:51.151641+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:13:51.167701+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:13:51.182727+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:13:51.192428+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:17:55.110786+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.119370+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.110787+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.117627+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:17:55.117691+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.110788+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:17:55.117692+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.117927+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:17:55.118517+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:17:55.118723+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:17:55.119335+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:17:55.511171+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-05T23:17:55.624740+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.512292+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-05T23:17:55.624741+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.624956+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:17:55.625552+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:17:55.625767+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:17:55.624689+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:17:55.626319+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:17:55.626714+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:17:55.626723+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.627397+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:17:55.627443+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.627444+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.627640+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:17:55.628141+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:17:55.628292+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:17:55.628786+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:17:55.629214+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:17:55.629224+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.659132+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:17:55.673034+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:17:55.680432+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:17:55.714049+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:17:55.714094+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.714096+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.714300+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:17:55.714835+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:17:55.715030+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:17:55.715602+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:17:55.724829+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:17:55.716058+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:17:55.725283+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:17:55.716493+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:17:55.725315+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.716503+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.739112+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:17:55.723392+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:17:55.739153+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.723430+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:17:55.739154+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.723624+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:17:55.740027+00:00 shinyapps[316507]: output file: /tmp/RtmpyoBWvb/pasture16.knit.md
+2018-04-05T23:17:55.724142+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:17:55.740028+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.723431+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.739323+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.724299+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:17:55.744933+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/RtmpyoBWvb/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/RtmpyoBWvb/file31546203992.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/RtmpyoBWvb/file31546203992_files/style.css 
+2018-04-05T23:17:55.794667+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.794670+00:00 shinyapps[316507]: Output created: /tmp/RtmpyoBWvb/file31546203992.html
+2018-04-05T23:17:55.826498+00:00 shinyapps[316507]: 
+2018-04-05T23:17:55.826630+00:00 shinyapps[316507]: observed location = 175.619105 -40.386396 
+2018-04-05T23:17:57.963017+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:17:57.963137+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:17:57.964632+00:00 shinyapps[316507]: 
+2018-04-05T23:17:57.964717+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:17:57.967097+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:17:57.967199+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:17:57.968515+00:00 shinyapps[316507]: 
+2018-04-05T23:17:57.968622+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:17:57.977480+00:00 shinyapps[316507]: 
+2018-04-05T23:17:57.976065+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:17:57.976171+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:17:57.977558+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:17:57.978936+00:00 shinyapps[316507]: 
+2018-04-05T23:17:57.979017+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:18:01.535585+00:00 shinyapps[316507]: 
+2018-04-05T23:18:01.625263+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:18:01.625335+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:18:01.625413+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:18:01.630937+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:18:01.634489+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:18:01.640835+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.4595567905478 yqr1 = 13.3414998894522 
+2018-04-05T23:18:01.644692+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:18:01.650693+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.1651019794273 yqr1 = 13.6359547005727 
+2018-04-05T23:18:01.654743+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:18:01.660392+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.6405739300798 yqr1 = 15.4355937899202 
+2018-04-05T23:18:01.665111+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:18:01.749227+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:18:01.535658+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:18:01.546218+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:18:01.540287+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:18:01.549561+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:18:01.552940+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:18:01.573806+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:18:01.625011+00:00 shinyapps[316507]: 
+2018-04-05T23:18:01.625126+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:18:01.625201+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:18:01.823703+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:18:01.837283+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:18:01.860170+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:18:01.851765+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:18:03.084791+00:00 shinyapps[316507]: 
+2018-04-05T23:18:03.084867+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:18:03.173842+00:00 shinyapps[316507]: 
+2018-04-05T23:18:03.174056+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:18:03.175086+00:00 shinyapps[316507]: 
+2018-04-05T23:18:03.175200+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:18:03.175981+00:00 shinyapps[316507]: 
+2018-04-05T23:18:03.176081+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:23:33.002988+00:00 shinyapps[316507]: 
+2018-04-05T23:23:33.002990+00:00 shinyapps[316507]: Starting R with process ID: '1117'
+2018-04-05T23:23:33.043761+00:00 shinyapps[316507]: 
+2018-04-05T23:23:33.043768+00:00 shinyapps[316507]: Listening on http://127.0.0.1:41424
+2018-04-05T23:23:36.862236+00:00 shinyapps[316507]: 
+2018-04-05T23:23:37.641131+00:00 shinyapps[316507]: Warning in res[i] = withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:23:37.641136+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:23:37.794193+00:00 shinyapps[316507]: 
+2018-04-05T23:23:37.794195+00:00 shinyapps[316507]: 
+2018-04-05T23:23:37.794197+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:23:37.844449+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:23:37.844566+00:00 shinyapps[316507]: 
+2018-04-05T23:23:37.844879+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:23:37.845608+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:23:37.847456+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:23:37.848590+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:23:37.844565+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:37.848599+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.318497+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:23:42.318571+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:42.318573+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.333403+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:23:42.427000+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:23:42.427219+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:23:42.427810+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:23:42.428303+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:23:42.428330+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.542067+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:23:42.542124+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:42.542125+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.542342+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:23:42.542890+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:23:42.543096+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:23:42.543645+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:23:42.544086+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:23:42.544113+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.640588+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:23:42.687656+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:23:42.697060+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:23:42.753038+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.753251+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:23:42.753770+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:23:42.754492+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:23:42.752982+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:23:42.753037+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:42.753955+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:23:42.754910+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:23:42.755326+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:23:42.770380+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:23:42.755336+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.806806+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:23:42.770425+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:42.770426+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.770625+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:23:42.771112+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:23:42.771268+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:23:42.771757+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:23:42.772178+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:23:42.772187+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.806854+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:23:42.806855+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.813924+00:00 shinyapps[316507]: 
+2018-04-05T23:23:42.829782+00:00 shinyapps[316507]: output file: /tmp/Rtmpq45VnE/pasture16.knit.md
+2018-04-05T23:23:42.829783+00:00 shinyapps[316507]: 
+2018-04-05T23:23:45.053100+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:23:45.053184+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:23:45.054850+00:00 shinyapps[316507]: 
+2018-04-05T23:23:45.054923+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:23:45.057874+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:23:45.057974+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:23:45.059198+00:00 shinyapps[316507]: 
+2018-04-05T23:23:45.059275+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:23:45.067385+00:00 shinyapps[316507]: 
+2018-04-05T23:23:45.067458+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:23:45.068642+00:00 shinyapps[316507]: 
+2018-04-05T23:23:45.068716+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:23:45.066141+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:23:45.066238+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:23:48.420979+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:23:48.420912+00:00 shinyapps[316507]: 
+2018-04-05T23:23:48.422106+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:23:48.428364+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:23:48.459112+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:23:48.462576+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:23:48.479847+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:23:48.592279+00:00 shinyapps[316507]: 
+2018-04-05T23:23:48.592402+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:23:48.592478+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:23:48.592547+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:23:48.592619+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:23:48.592692+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:23:48.628801+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:23:48.662823+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:23:49.125441+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.0932025939137 yqr1 = 13.7078540860863 
+2018-04-05T23:23:49.129912+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:23:49.140993+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:23:49.136072+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.3753692971758 yqr1 = 15.7007984228242 
+2018-04-05T23:23:49.604333+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:23:49.884912+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:23:49.936584+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:23:49.963166+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:23:49.972565+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:23:51.629393+00:00 shinyapps[316507]: 
+2018-04-05T23:23:51.629485+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:23:51.630460+00:00 shinyapps[316507]: 
+2018-04-05T23:23:51.630542+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:23:51.631444+00:00 shinyapps[316507]: 
+2018-04-05T23:23:51.632378+00:00 shinyapps[316507]: 
+2018-04-05T23:23:51.631554+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:23:51.632463+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:26:49.020376+00:00 shinyapps[316507]: Starting R with process ID: '1192'
+2018-04-05T23:26:49.020374+00:00 shinyapps[316507]: 
+2018-04-05T23:26:49.067175+00:00 shinyapps[316507]: Listening on http://127.0.0.1:41027
+2018-04-05T23:26:49.067173+00:00 shinyapps[316507]: 
+2018-04-05T23:26:52.989363+00:00 shinyapps[316507]: 
+2018-04-05T23:26:53.741131+00:00 shinyapps[316507]: Warning in res[i] = withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:26:53.741134+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:26:53.879973+00:00 shinyapps[316507]: 
+2018-04-05T23:26:53.879976+00:00 shinyapps[316507]: 
+2018-04-05T23:26:53.879977+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:26:53.930271+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:26:53.930379+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:53.930380+00:00 shinyapps[316507]: 
+2018-04-05T23:26:53.930675+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:26:53.931431+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:26:53.933249+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:26:53.934437+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:26:53.934447+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.249003+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:26:58.249061+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:58.462386+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.249063+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.351735+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:26:58.351746+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.462334+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:26:58.262693+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:26:58.462385+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:58.462607+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:26:58.463141+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:26:58.463347+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:26:58.463900+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:26:58.464345+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:26:58.350511+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:26:58.464356+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.350714+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:26:58.351266+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:26:58.559027+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:26:58.605687+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:26:58.614568+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:26:58.667942+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:26:58.667993+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:58.667994+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.668200+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:26:58.668712+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:26:58.668892+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:26:58.669426+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:26:58.669904+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:26:58.670321+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:26:58.670332+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.685228+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:26:58.685290+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:58.685292+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.685479+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:26:58.685993+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:26:58.686147+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:26:58.686647+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:26:58.687071+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:26:58.687081+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.720948+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:26:58.720998+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:26:58.720999+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.727887+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.743460+00:00 shinyapps[316507]: output file: /tmp/Rtmpp0ZcTD/pasture16.knit.md
+2018-04-05T23:26:58.743462+00:00 shinyapps[316507]: 
+2018-04-05T23:26:58.807022+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/Rtmpp0ZcTD/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/Rtmpp0ZcTD/file4a8100bce63.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/Rtmpp0ZcTD/file4a8100bce63_files/style.css 
+2018-04-05T23:27:00.822426+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:27:00.822510+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:27:00.824112+00:00 shinyapps[316507]: 
+2018-04-05T23:27:00.824182+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:27:00.836594+00:00 shinyapps[316507]: 
+2018-04-05T23:27:00.836665+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:27:00.827060+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:27:00.827154+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:27:00.828336+00:00 shinyapps[316507]: 
+2018-04-05T23:27:00.828412+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:27:00.835312+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:27:00.835410+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:27:00.837866+00:00 shinyapps[316507]: 
+2018-04-05T23:27:00.837928+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:27:05.874168+00:00 shinyapps[316507]: 
+2018-04-05T23:27:05.874241+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:27:05.875663+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:27:05.882694+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:27:05.915158+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:27:05.918608+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:27:05.937044+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:27:06.051054+00:00 shinyapps[316507]: 
+2018-04-05T23:27:06.051194+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:27:06.051236+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:27:06.051310+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:27:06.051389+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:27:06.051459+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:27:06.101170+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:27:06.137462+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:27:06.152512+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.3920334573184 yqr1 = 13.4090232226816 
+2018-04-05T23:27:06.157043+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:27:07.103027+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:27:07.372577+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:27:07.420252+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:27:07.444469+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:27:07.453415+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:28:02.743410+00:00 shinyapps[316507]: 
+2018-04-05T23:28:03.176406+00:00 shinyapps[316507]: Warning in res[i] <- withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:28:03.176409+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:28:03.237733+00:00 shinyapps[316507]: 
+2018-04-05T23:28:03.237734+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:28:03.237730+00:00 shinyapps[316507]: 
+2018-04-05T23:28:03.244668+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:28:03.244747+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:28:03.244749+00:00 shinyapps[316507]: 
+2018-04-05T23:28:03.245000+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:28:03.245571+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:28:03.245804+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:28:03.246421+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:28:03.246433+00:00 shinyapps[316507]: 
+2018-04-05T23:28:03.962172+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-05T23:28:03.963138+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-05T23:28:04.209056+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:28:04.209117+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:28:04.209125+00:00 shinyapps[316507]: 
+2018-04-05T23:28:04.209364+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:28:04.209967+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:28:04.210164+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:28:04.210737+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:28:04.211141+00:00 shinyapps[316507]: 
+2018-04-05T23:28:04.211114+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:28:04.230605+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:28:04.230655+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:28:04.230664+00:00 shinyapps[316507]: 
+2018-04-05T23:28:04.230896+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:28:04.231398+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:28:04.231581+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:28:04.232123+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:28:04.232572+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:28:04.232582+00:00 shinyapps[316507]: 
+2018-04-05T23:28:04.262247+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:28:04.286141+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:28:04.319217+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:28:04.352030+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:28:04.352090+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:28:04.352099+00:00 shinyapps[316507]: 
+2018-04-05T23:28:04.352339+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:28:06.579920+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:28:06.580007+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:28:06.581303+00:00 shinyapps[316507]: 
+2018-04-05T23:28:06.581370+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:28:06.583369+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:28:06.583460+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:28:06.584586+00:00 shinyapps[316507]: 
+2018-04-05T23:28:06.584656+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:28:06.587481+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:28:06.587579+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:28:06.588689+00:00 shinyapps[316507]: 
+2018-04-05T23:28:06.588773+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:28:06.589903+00:00 shinyapps[316507]: 
+2018-04-05T23:28:06.589968+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:28:12.473763+00:00 shinyapps[316507]: 
+2018-04-05T23:28:12.473839+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:28:12.474872+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:28:12.480744+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:28:12.484042+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:28:12.487365+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:28:12.577027+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:28:12.655572+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:28:12.655640+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:28:12.655713+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:28:12.655429+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:28:12.655307+00:00 shinyapps[316507]: 
+2018-04-05T23:28:12.655502+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:28:12.676827+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:28:12.680428+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:28:12.686885+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.3711383552394 yqr1 = 13.4299183247606 
+2018-04-05T23:28:12.690785+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:28:12.696715+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.0348132835011 yqr1 = 13.7662433964989 
+2018-04-05T23:28:12.700817+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:28:12.706495+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.6046037788773 yqr1 = 15.4715639411227 
+2018-04-05T23:28:12.711228+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:28:15.678722+00:00 shinyapps[316507]: 
+2018-04-05T23:28:15.678837+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:28:15.680103+00:00 shinyapps[316507]: 
+2018-04-05T23:28:15.680216+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:28:15.681239+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:28:15.681175+00:00 shinyapps[316507]: 
+2018-04-05T23:28:15.682046+00:00 shinyapps[316507]: 
+2018-04-05T23:28:15.682114+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:39:30.739034+00:00 shinyapps[316507]: 
+2018-04-05T23:39:30.982379+00:00 shinyapps[316507]: Warning in res[i] <- withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:39:30.982382+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:39:31.376566+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-05T23:39:31.377568+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-05T23:39:31.488487+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:39:31.488539+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:39:31.580575+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:39:31.488541+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.545990+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:39:31.488758+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:39:31.580645+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:39:31.489301+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:39:31.580647+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.490442+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.491137+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:39:31.491172+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:39:31.491174+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.491373+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:39:31.491867+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:39:31.492019+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:39:31.492506+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:39:31.492929+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:39:31.492939+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.582203+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:39:31.522956+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:39:31.582667+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:39:31.537260+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:39:31.583121+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:39:31.490057+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:39:31.581405+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:39:31.490433+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:39:31.581599+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:39:31.489483+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:39:31.580841+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:39:31.590388+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:39:31.583144+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.590137+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:39:31.590177+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:39:31.590177+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.590891+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:39:31.591059+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:39:31.591594+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:39:31.592066+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:39:31.592100+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.606328+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:39:31.606372+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:39:31.606373+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.606558+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.607267+00:00 shinyapps[316507]: output file: /tmp/Rtmpp0ZcTD/pasture16.knit.md
+2018-04-05T23:39:31.607268+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.612601+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/Rtmpp0ZcTD/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/Rtmpp0ZcTD/file4a821088bba.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/Rtmpp0ZcTD/file4a821088bba_files/style.css 
+2018-04-05T23:39:31.657322+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.657325+00:00 shinyapps[316507]: Output created: /tmp/Rtmpp0ZcTD/file4a821088bba.html
+2018-04-05T23:39:31.689374+00:00 shinyapps[316507]: 
+2018-04-05T23:39:31.689510+00:00 shinyapps[316507]: observed location = 175.619105 -40.386396 
+2018-04-05T23:39:37.752286+00:00 shinyapps[316507]: 
+2018-04-05T23:39:37.752387+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:39:37.753751+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:39:37.761286+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:39:37.773799+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:39:37.777887+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:39:37.844189+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:39:37.784769+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:39:37.843866+00:00 shinyapps[316507]: 
+2018-04-05T23:39:37.844005+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:39:37.844087+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:39:37.844251+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:39:37.844322+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:39:37.850272+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:39:37.854131+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:39:37.861065+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.4056670958283 yqr1 = 13.3953895841717 
+2018-04-05T23:39:37.865214+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:39:37.871513+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.0786461555944 yqr1 = 13.7224105244056 
+2018-04-05T23:39:37.875722+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:39:37.881521+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.5137117540759 yqr1 = 15.5624559659241 
+2018-04-05T23:39:37.886364+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:39:37.965386+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:39:38.036501+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:39:38.049617+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:39:38.059246+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:39:38.075465+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:47:12.508219+00:00 shinyapps[316507]: 
+2018-04-05T23:47:12.781234+00:00 shinyapps[316507]: Warning in res[i] <- withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:47:12.781235+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:47:12.800350+00:00 shinyapps[316507]: 
+2018-04-05T23:47:12.800352+00:00 shinyapps[316507]: 
+2018-04-05T23:47:12.800353+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:47:12.808190+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:47:12.808248+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:47:12.808249+00:00 shinyapps[316507]: 
+2018-04-05T23:47:12.808477+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:47:12.809049+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:47:12.809270+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:47:12.809955+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:47:12.809987+00:00 shinyapps[316507]: 
+2018-04-05T23:47:13.762673+00:00 shinyapps[316507]: 
+2018-04-05T23:47:13.762675+00:00 shinyapps[316507]: Output created: /tmp/Rtmpp0ZcTD/file4a8252ee4ea.html
+2018-04-05T23:47:13.797361+00:00 shinyapps[316507]: 
+2018-04-05T23:47:13.797538+00:00 shinyapps[316507]: observed location = 175.619105 -40.386396 
+2018-04-05T23:47:15.572680+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:47:15.572797+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:47:15.574246+00:00 shinyapps[316507]: 
+2018-04-05T23:47:15.574333+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:47:15.576464+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:47:15.576579+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:47:15.577783+00:00 shinyapps[316507]: 
+2018-04-05T23:47:15.577873+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:47:15.580822+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:47:15.580940+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:47:15.582129+00:00 shinyapps[316507]: 
+2018-04-05T23:47:15.582226+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:47:15.583453+00:00 shinyapps[316507]: 
+2018-04-05T23:47:15.583540+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:47:19.813334+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:47:19.826770+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:47:19.835357+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:47:19.844450+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:47:21.374956+00:00 shinyapps[316507]: 
+2018-04-05T23:47:21.374990+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:47:21.375862+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:47:21.376611+00:00 shinyapps[316507]: 
+2018-04-05T23:47:21.376690+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:47:21.377428+00:00 shinyapps[316507]: 
+2018-04-05T23:47:21.378118+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:47:21.375803+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.109079+00:00 shinyapps[316507]: Warning in res[i] <- withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-05T23:52:01.109082+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-05T23:52:01.129501+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.129504+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.129506+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-05T23:52:01.136781+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-05T23:52:01.136837+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:01.136838+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.137065+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-05T23:52:01.137741+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-05T23:52:01.147331+00:00 shinyapps[316507]: List of 1
+2018-04-05T23:52:01.148530+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-05T23:52:01.148572+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.680712+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-05T23:52:01.681877+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-05T23:52:01.798202+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:52:01.798264+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:01.798489+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:52:01.799052+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:52:01.798267+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.799796+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:52:01.799239+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:01.800164+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:52:01.800173+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.800869+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:52:01.800978+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:01.800979+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.801118+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:52:01.801595+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:52:01.801792+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:01.802353+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:52:01.802750+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:52:01.802765+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.833799+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:52:01.848767+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:52:01.857792+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:52:01.902823+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:52:01.902895+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:01.902904+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.903900+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:52:01.904582+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:52:01.905565+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:52:01.906356+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:52:01.907072+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:52:01.907122+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.919123+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:52:01.919187+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:01.904278+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:52:01.919199+00:00 shinyapps[316507]: 
+2018-04-05T23:52:01.919566+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:52:01.920881+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:01.921914+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:52:01.920579+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:52:01.922729+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:52:01.922780+00:00 shinyapps[316507]: 
+2018-04-05T23:52:04.197823+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:52:04.197919+00:00 shinyapps[316507]: 2005-06 (12 Farms) 2006-07 (10 Farms) 2007-08 (18 Farms) 2008-09 (25 Farms) 2009-10 (18 Farms) 2010-11 (19 Farms) 2011-12 (40 Farms) 2012-13 (56 Farms) 2013-14 (43 Farms) 2014-15 (44 Farms) 2015-16 (45 Farms) 2016-17 (31 Farms) 
+2018-04-05T23:52:04.199268+00:00 shinyapps[316507]: 
+2018-04-05T23:52:04.199339+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:52:04.201444+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:52:04.201539+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (12 Farms) High (200m+) (14 Farms) 
+2018-04-05T23:52:04.202727+00:00 shinyapps[316507]: 
+2018-04-05T23:52:04.202800+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:04.205756+00:00 shinyapps[316507]: my$soil_here = 5 
+2018-04-05T23:52:04.207013+00:00 shinyapps[316507]: 
+2018-04-05T23:52:04.207089+00:00 shinyapps[316507]: observed my$soil =  B G L P R 
+2018-04-05T23:52:04.205850+00:00 shinyapps[316507]: Brown (10 Farms) Gley (11 Farms) Allophanic (5 Farms) Pallic (3 Farms) Recent (2 Farms) 
+2018-04-05T23:52:04.208262+00:00 shinyapps[316507]: 
+2018-04-05T23:52:04.208332+00:00 shinyapps[316507]: observed my$adjust = 100 kgN/ha/y 
+2018-04-05T23:52:05.559961+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.277136+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-05T23:52:06.278171+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-05T23:52:06.383092+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-05T23:52:06.383145+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:06.383147+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.383372+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-05T23:52:06.385009+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.385761+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-05T23:52:06.385803+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:06.385803+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.384093+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:06.383914+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-05T23:52:06.386617+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:06.384633+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-05T23:52:06.387514+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:52:06.385001+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-05T23:52:06.386002+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-05T23:52:06.386472+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-05T23:52:06.387110+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:52:06.387523+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.424760+00:00 shinyapps[316507]: initialise location 
+2018-04-05T23:52:06.438988+00:00 shinyapps[316507]: render main panel 
+2018-04-05T23:52:06.447449+00:00 shinyapps[316507]: render sidebar 
+2018-04-05T23:52:06.479460+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-05T23:52:06.479518+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:06.479520+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.479736+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-05T23:52:06.480271+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-05T23:52:06.480454+00:00 shinyapps[316507]: List of 3
+2018-04-05T23:52:06.480997+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-05T23:52:06.481863+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-05T23:52:06.481417+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-05T23:52:06.481873+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.488573+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-05T23:52:06.488605+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:06.488814+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-05T23:52:06.488606+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.489296+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-05T23:52:06.489458+00:00 shinyapps[316507]: List of 2
+2018-04-05T23:52:06.489960+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-05T23:52:06.490400+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.490373+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-05T23:52:06.503789+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-05T23:52:06.503827+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-05T23:52:06.503828+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.504726+00:00 shinyapps[316507]: output file: /tmp/Rtmpp0ZcTD/pasture16.knit.md
+2018-04-05T23:52:06.504007+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.504727+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.510172+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/Rtmpp0ZcTD/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/Rtmpp0ZcTD/file4a8175f9105.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/Rtmpp0ZcTD/file4a8175f9105_files/style.css 
+2018-04-05T23:52:06.556574+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.556577+00:00 shinyapps[316507]: Output created: /tmp/Rtmpp0ZcTD/file4a8175f9105.html
+2018-04-05T23:52:06.592277+00:00 shinyapps[316507]: 
+2018-04-05T23:52:06.592418+00:00 shinyapps[316507]: observed location = 175.619105 -40.386396 
+2018-04-05T23:52:11.418690+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:52:11.431927+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:11.440226+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:11.448530+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:52:12.529807+00:00 shinyapps[316507]: 
+2018-04-05T23:52:12.530661+00:00 shinyapps[316507]: 
+2018-04-05T23:52:12.530730+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:52:12.529876+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:52:12.531472+00:00 shinyapps[316507]: 
+2018-04-05T23:52:12.531550+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:52:12.532288+00:00 shinyapps[316507]: 
+2018-04-05T23:52:12.532365+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:13.464535+00:00 shinyapps[316507]: 
+2018-04-05T23:52:13.464608+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:52:13.465681+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:52:13.479462+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:52:13.475941+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:52:13.543008+00:00 shinyapps[316507]: analyse for soil = B G L P R 
+2018-04-05T23:52:13.543070+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:13.543154+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:52:13.548640+00:00 shinyapps[316507]: nrow(data) =  31 
+2018-04-05T23:52:13.483067+00:00 shinyapps[316507]: render adjust checkbox 
+2018-04-05T23:52:13.568679+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 10.9789776575758 yqr1 = 13.8220790224242 
+2018-04-05T23:52:13.489104+00:00 shinyapps[316507]: render leaflet 
+2018-04-05T23:52:13.572777+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:52:13.542733+00:00 shinyapps[316507]: 
+2018-04-05T23:52:13.578526+00:00 shinyapps[316507]: yqr1 = 13.53808386 yqr1 = 11.4594964863723 yqr1 = 15.6166712336277 
+2018-04-05T23:52:13.542859+00:00 shinyapps[316507]: analyse for location = 175.619105 -40.386396 
+2018-04-05T23:52:13.542932+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:52:13.552183+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:52:13.562585+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:52:13.558659+00:00 shinyapps[316507]: yqr1 = 12.40052834 yqr1 = 11.3583508716608 yqr1 = 13.4427058083392 
+2018-04-05T23:52:13.583291+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:52:13.663462+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:52:15.418159+00:00 shinyapps[316507]: 
+2018-04-05T23:52:15.418248+00:00 shinyapps[316507]: observed input$adjust = 100 kgN/ha/y 
+2018-04-05T23:52:15.419035+00:00 shinyapps[316507]: 
+2018-04-05T23:52:15.419121+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:52:15.419875+00:00 shinyapps[316507]: 
+2018-04-05T23:52:15.419970+00:00 shinyapps[316507]: observed input$soil = B G L P R 
+2018-04-05T23:52:15.420733+00:00 shinyapps[316507]: 
+2018-04-05T23:52:15.420825+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:31.070454+00:00 shinyapps[316507]: 
+2018-04-05T23:52:31.070527+00:00 shinyapps[316507]: observed search bar = gal 
+2018-04-05T23:52:31.463238+00:00 shinyapps[316507]: gal = 174.891604 -36.927403 
+2018-04-05T23:52:31.530940+00:00 shinyapps[316507]: 
+2018-04-05T23:52:31.531113+00:00 shinyapps[316507]: observed location = 174.891604 -36.927403 
+2018-04-05T23:52:33.455289+00:00 shinyapps[316507]: my$season_here = 11 
+2018-04-05T23:52:33.493871+00:00 shinyapps[316507]: 
+2018-04-05T23:52:33.455408+00:00 shinyapps[316507]: 2005-06 (4 Farms) 2007-08 (2 Farms) 2008-09 (4 Farms) 2009-10 (8 Farms) 2010-11 (12 Farms) 2011-12 (8 Farms) 2012-13 (16 Farms) 2013-14 (21 Farms) 2014-15 (20 Farms) 2015-16 (17 Farms) 2016-17 (9 Farms) 
+2018-04-05T23:52:33.497007+00:00 shinyapps[316507]: my$elev_here = 2 
+2018-04-05T23:52:33.493971+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:52:33.497095+00:00 shinyapps[316507]: Low (0-50m) (6 Farms) Middle (50-200m) (3 Farms) 
+2018-04-05T23:52:33.531728+00:00 shinyapps[316507]: 
+2018-04-05T23:52:33.526707+00:00 shinyapps[316507]: 
+2018-04-05T23:52:33.526805+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:52:33.530829+00:00 shinyapps[316507]: Gley (2 Farms) Granular (4 Farms) Organic (2 Farms) Ultic (1 Farms) 
+2018-04-05T23:52:33.530734+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:52:33.533917+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:52:33.531808+00:00 shinyapps[316507]: observed my$soil =  G N O U 
+2018-04-05T23:52:33.539984+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:52:33.543333+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:52:33.705391+00:00 shinyapps[316507]: 
+2018-04-05T23:52:34.075113+00:00 shinyapps[316507]: 
+2018-04-05T23:52:34.075183+00:00 shinyapps[316507]: observed search bar = gala 
+2018-04-05T23:52:34.689553+00:00 shinyapps[316507]: gala = 168.3501178 -46.406511 
+2018-04-05T23:52:34.698164+00:00 shinyapps[316507]: 
+2018-04-05T23:52:34.698292+00:00 shinyapps[316507]: observed location = 168.3501178 -46.406511 
+2018-04-05T23:52:37.032543+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:37.040584+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:37.048516+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:52:37.244757+00:00 shinyapps[316507]: 
+2018-04-05T23:52:37.244824+00:00 shinyapps[316507]: observed search bar = galate 
+2018-04-05T23:52:37.638666+00:00 shinyapps[316507]: galate = 176.7434113 -38.4119391 
+2018-04-05T23:52:37.647319+00:00 shinyapps[316507]: observed location = 176.7434113 -38.4119391 
+2018-04-05T23:52:37.647168+00:00 shinyapps[316507]: 
+2018-04-05T23:52:39.669914+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:52:39.861048+00:00 shinyapps[316507]: 
+2018-04-05T23:52:39.861122+00:00 shinyapps[316507]: observed search bar = galatea 
+2018-04-05T23:52:40.142018+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.133647+00:00 shinyapps[316507]: galatea = 176.7434113 -38.4119391 
+2018-04-05T23:52:40.142808+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.143605+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.142886+00:00 shinyapps[316507]: observed my$elev = NA 
+2018-04-05T23:52:40.143681+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:52:40.142095+00:00 shinyapps[316507]: observed my$season = NA 
+2018-04-05T23:52:40.176450+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.178775+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.177629+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:52:40.178850+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:52:40.176525+00:00 shinyapps[316507]: observed input$soil = G N O U 
+2018-04-05T23:52:40.177552+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.179652+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:52:40.179575+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.182892+00:00 shinyapps[316507]: my$soil_here = 1 
+2018-04-05T23:52:40.182989+00:00 shinyapps[316507]: Pumice (3 Farms) 
+2018-04-05T23:52:40.184288+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:52:40.187605+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.187708+00:00 shinyapps[316507]: observed my$soil =  M 
+2018-04-05T23:52:40.191834+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.191964+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:52:40.192049+00:00 shinyapps[316507]: analyse for season = NA 
+2018-04-05T23:52:40.192110+00:00 shinyapps[316507]: analyse for soil = M 
+2018-04-05T23:52:40.192180+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:52:40.192252+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:52:40.203467+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.203543+00:00 shinyapps[316507]: observed input$soil = B G O P R Z 
+2018-04-05T23:52:40.204660+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.204738+00:00 shinyapps[316507]: observed my$soil =  B G O P R Z 
+2018-04-05T23:52:40.208720+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.208847+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:52:40.208924+00:00 shinyapps[316507]: analyse for season = NA 
+2018-04-05T23:52:40.208998+00:00 shinyapps[316507]: analyse for soil = B G O P R Z 
+2018-04-05T23:52:40.209068+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:52:40.209140+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:52:40.298890+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.298977+00:00 shinyapps[316507]: observed input$soil = G M O R 
+2018-04-05T23:52:40.299332+00:00 shinyapps[316507]: Warning in my$soil != input$soil :
+2018-04-05T23:52:40.299333+00:00 shinyapps[316507]:   longer object length is not a multiple of shorter object length
+2018-04-05T23:52:40.300125+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.300198+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:40.300547+00:00 shinyapps[316507]: Warning in my$elev != input$elev :
+2018-04-05T23:52:40.300548+00:00 shinyapps[316507]:   longer object length is not a multiple of shorter object length
+2018-04-05T23:52:40.301448+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.301520+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:52:40.302284+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.302359+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:40.305588+00:00 shinyapps[316507]: my$soil_here = 1 
+2018-04-05T23:52:40.305681+00:00 shinyapps[316507]: Pumice (3 Farms) 
+2018-04-05T23:52:40.306884+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:52:40.310020+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.310124+00:00 shinyapps[316507]: observed my$soil =  M 
+2018-04-05T23:52:40.314143+00:00 shinyapps[316507]: 
+2018-04-05T23:52:40.314276+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:52:40.314349+00:00 shinyapps[316507]: analyse for season = NA 
+2018-04-05T23:52:40.314422+00:00 shinyapps[316507]: analyse for soil = M 
+2018-04-05T23:52:40.314490+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:40.314561+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:52:59.604807+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:52:59.616938+00:00 shinyapps[316507]: Low (0-50m) (29 Farms) Middle (50-200m) (10 Farms) High (200m+) (9 Farms) 
+2018-04-05T23:52:59.618316+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:52:59.621421+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.621511+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:59.625241+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:52:59.625347+00:00 shinyapps[316507]: Gley (12 Farms) Pumice (20 Farms) Organic (3 Farms) Recent (13 Farms) 
+2018-04-05T23:52:59.626714+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:52:59.629904+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.629980+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:52:59.634177+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.604907+00:00 shinyapps[316507]: 2005-06 (6 Farms) 2006-07 (8 Farms) 2007-08 (15 Farms) 2008-09 (18 Farms) 2009-10 (50 Farms) 2010-11 (47 Farms) 2011-12 (49 Farms) 2012-13 (64 Farms) 2013-14 (65 Farms) 2014-15 (62 Farms) 2015-16 (69 Farms) 2016-17 (48 Farms) 
+2018-04-05T23:52:59.634342+00:00 shinyapps[316507]: analyse for location = 176.774902325124 -38.3809075704239 
+2018-04-05T23:52:59.664756+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:52:59.606093+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.634407+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:52:59.674805+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9613617928704 yqr1 = 12.5364751151296 
+2018-04-05T23:52:59.606918+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.634625+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:52:59.754919+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:52:59.606173+00:00 shinyapps[316507]: observed my$elev = NA 
+2018-04-05T23:52:59.634530+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:52:59.679628+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:52:59.608072+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:52:59.634702+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:52:59.832534+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:52:59.607010+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:52:59.639997+00:00 shinyapps[316507]: nrow(data) =  48 
+2018-04-05T23:52:59.845505+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:59.613869+00:00 shinyapps[316507]: 
+2018-04-05T23:52:59.643617+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:52:59.853833+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:52:59.613962+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:52:59.650525+00:00 shinyapps[316507]: yqr1 = 15.25426592 yqr1 = 14.6415614686113 yqr1 = 15.8669703713887 
+2018-04-05T23:52:59.616823+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:52:59.654588+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:52:59.660546+00:00 shinyapps[316507]: yqr1 = 12.8652959915 yqr1 = 11.7669640950154 yqr1 = 13.9636278879846 
+2018-04-05T23:52:59.862132+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:07.978081+00:00 shinyapps[316507]: 
+2018-04-05T23:53:07.978164+00:00 shinyapps[316507]: observed search bar = galate 
+2018-04-05T23:53:07.997267+00:00 shinyapps[316507]: [1] "try 2 ..."
+2018-04-05T23:53:08.030072+00:00 shinyapps[316507]: [1] "try 3 ..."
+2018-04-05T23:53:07.994861+00:00 shinyapps[316507]: OVER_QUERY_LIMIT:galate+New+Zealand
+2018-04-05T23:53:08.031688+00:00 shinyapps[316507]: galate = 176.7434113 -38.4119391 
+2018-04-05T23:53:08.046708+00:00 shinyapps[316507]: 
+2018-04-05T23:53:08.046854+00:00 shinyapps[316507]: observed location = 176.7434113 -38.4119391 
+2018-04-05T23:53:09.874352+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:53:09.874477+00:00 shinyapps[316507]: 2005-06 (5 Farms) 2006-07 (8 Farms) 2007-08 (15 Farms) 2008-09 (18 Farms) 2009-10 (49 Farms) 2010-11 (46 Farms) 2011-12 (48 Farms) 2012-13 (61 Farms) 2013-14 (62 Farms) 2014-15 (58 Farms) 2015-16 (66 Farms) 2016-17 (46 Farms) 
+2018-04-05T23:53:09.875627+00:00 shinyapps[316507]: 
+2018-04-05T23:53:09.875711+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:53:09.878807+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:53:09.878917+00:00 shinyapps[316507]: Low (0-50m) (27 Farms) Middle (50-200m) (10 Farms) High (200m+) (9 Farms) 
+2018-04-05T23:53:09.879887+00:00 shinyapps[316507]: 
+2018-04-05T23:53:09.879979+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:09.884915+00:00 shinyapps[316507]: 
+2018-04-05T23:53:09.883943+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:09.884053+00:00 shinyapps[316507]: Gley (12 Farms) Pumice (20 Farms) Organic (1 Farms) Recent (13 Farms) 
+2018-04-05T23:53:09.884991+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:53:09.887078+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:53:09.893069+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:53:09.896478+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:09.901893+00:00 shinyapps[316507]: 
+2018-04-05T23:53:09.902100+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:09.902025+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:09.902168+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:53:09.902243+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:09.907518+00:00 shinyapps[316507]: nrow(data) =  46 
+2018-04-05T23:53:09.902311+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:09.911022+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:09.917582+00:00 shinyapps[316507]: yqr1 = 15.25426592 yqr1 = 14.6582416731245 yqr1 = 15.8502901668755 
+2018-04-05T23:53:09.921514+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:09.927302+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.5759976814578 yqr1 = 12.9218392265422 
+2018-04-05T23:53:09.931411+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:10.115111+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:10.100563+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:09.937123+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9628505759149 yqr1 = 12.5349863320851 
+2018-04-05T23:53:09.941865+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:10.017743+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:10.124365+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:15.504204+00:00 shinyapps[316507]: 
+2018-04-05T23:53:15.504278+00:00 shinyapps[316507]: observed search bar = galate 
+2018-04-05T23:53:15.537608+00:00 shinyapps[316507]: galate = 176.7434113 -38.4119391 
+2018-04-05T23:53:16.403944+00:00 shinyapps[316507]: 
+2018-04-05T23:53:16.404014+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:53:20.325427+00:00 shinyapps[316507]: 
+2018-04-05T23:53:20.325519+00:00 shinyapps[316507]: observed search bar = lin 
+2018-04-05T23:53:20.773339+00:00 shinyapps[316507]: lin = 172.5715913 -43.5310055 
+2018-04-05T23:53:20.781734+00:00 shinyapps[316507]: 
+2018-04-05T23:53:20.781896+00:00 shinyapps[316507]: observed location = 172.5715913 -43.5310055 
+2018-04-05T23:53:22.995130+00:00 shinyapps[316507]: 
+2018-04-05T23:53:22.995203+00:00 shinyapps[316507]: observed search bar = linc 
+2018-04-05T23:53:23.641475+00:00 shinyapps[316507]: linc = 174.37533145 -40.6293305 
+2018-04-05T23:53:23.650346+00:00 shinyapps[316507]: 
+2018-04-05T23:53:23.650494+00:00 shinyapps[316507]: observed location = 174.37533145 -40.6293305 
+2018-04-05T23:53:26.260066+00:00 shinyapps[316507]: lincoln = 172.4842487 -43.6400869 
+2018-04-05T23:53:26.268624+00:00 shinyapps[316507]: 
+2018-04-05T23:53:26.268750+00:00 shinyapps[316507]: observed location = 172.4842487 -43.6400869 
+2018-04-05T23:53:28.035690+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.034557+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:53:28.035766+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:53:28.046187+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:53:28.038603+00:00 shinyapps[316507]: Low (0-50m) (7 Farms) Middle (50-200m) (10 Farms) High (200m+) (1 Farms) 
+2018-04-05T23:53:28.052119+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:53:28.039467+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.055411+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:28.039550+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:28.060671+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.034659+00:00 shinyapps[316507]: 2005-06 (6 Farms) 2006-07 (7 Farms) 2007-08 (12 Farms) 2008-09 (25 Farms) 2009-10 (31 Farms) 2010-11 (23 Farms) 2011-12 (15 Farms) 2012-13 (17 Farms) 2013-14 (27 Farms) 2014-15 (30 Farms) 2015-16 (31 Farms) 2016-17 (18 Farms) 
+2018-04-05T23:53:28.060803+00:00 shinyapps[316507]: analyse for location = 172.4842487 -43.6400869 
+2018-04-05T23:53:28.038511+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:53:28.060884+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:28.044188+00:00 shinyapps[316507]: observed my$soil =  B G P R 
+2018-04-05T23:53:28.066435+00:00 shinyapps[316507]: nrow(data) =  18 
+2018-04-05T23:53:28.044114+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.043191+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:28.060953+00:00 shinyapps[316507]: analyse for soil = B G P R 
+2018-04-05T23:53:28.043285+00:00 shinyapps[316507]: Brown (8 Farms) Gley (2 Farms) Pallic (3 Farms) Recent (5 Farms) 
+2018-04-05T23:53:28.061100+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:28.074117+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:28.080165+00:00 shinyapps[316507]: yqr1 = 16.11620655 yqr1 = 14.7629444445896 yqr1 = 17.4694686554104 
+2018-04-05T23:53:28.084003+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:28.089619+00:00 shinyapps[316507]: yqr1 = 17.197399132 yqr1 = 14.5323321045743 yqr1 = 19.8624661594257 
+2018-04-05T23:53:28.061027+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:28.093660+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:28.099385+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:28.174353+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:28.237303+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:28.247697+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:28.253960+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:28.260021+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:28.714472+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:28.722447+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:28.917837+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.919368+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.917914+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:53:28.919440+00:00 shinyapps[316507]: observed input$soil = B G P R 
+2018-04-05T23:53:28.920358+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.924446+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:53:28.924541+00:00 shinyapps[316507]: Low (0-50m) (7 Farms) Middle (50-200m) (10 Farms) High (200m+) (1 Farms) 
+2018-04-05T23:53:28.925405+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.920436+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:28.921467+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.921541+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:53:28.925480+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:28.929075+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:28.929170+00:00 shinyapps[316507]: Brown (8 Farms) Gley (2 Farms) Pallic (3 Farms) Recent (5 Farms) 
+2018-04-05T23:53:28.930037+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.930119+00:00 shinyapps[316507]: observed my$soil =  B G P R 
+2018-04-05T23:53:28.932135+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:53:28.935602+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:28.940879+00:00 shinyapps[316507]: 
+2018-04-05T23:53:28.941012+00:00 shinyapps[316507]: analyse for location = 172.4842487 -43.6400869 
+2018-04-05T23:53:28.941094+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:28.941163+00:00 shinyapps[316507]: analyse for soil = B G P R 
+2018-04-05T23:53:28.941245+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:28.941312+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:28.946822+00:00 shinyapps[316507]: nrow(data) =  18 
+2018-04-05T23:53:28.950399+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:28.956559+00:00 shinyapps[316507]: yqr1 = 16.11620655 yqr1 = 14.616987175555 yqr1 = 17.615425924445 
+2018-04-05T23:53:28.960454+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:28.966212+00:00 shinyapps[316507]: yqr1 = 17.197399132 yqr1 = 14.390037167721 yqr1 = 20.004761096279 
+2018-04-05T23:53:28.974467+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:28.980269+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:29.067073+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:29.140099+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:29.129532+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:29.146665+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:29.153184+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:35.185849+00:00 shinyapps[316507]: lincol = 172.4842487 -43.6400869 
+2018-04-05T23:53:35.194388+00:00 shinyapps[316507]: 
+2018-04-05T23:53:35.195196+00:00 shinyapps[316507]: 
+2018-04-05T23:53:35.195269+00:00 shinyapps[316507]: observed my$elev = NA 
+2018-04-05T23:53:35.195989+00:00 shinyapps[316507]: 
+2018-04-05T23:53:35.273778+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:53:35.414613+00:00 shinyapps[316507]: observed search bar =  
+2018-04-05T23:53:35.184404+00:00 shinyapps[316507]: [1] "try 3 ..."
+2018-04-05T23:53:35.194464+00:00 shinyapps[316507]: observed my$season = NA 
+2018-04-05T23:53:35.414545+00:00 shinyapps[316507]: 
+2018-04-05T23:53:36.598583+00:00 shinyapps[316507]: 
+2018-04-05T23:53:36.598659+00:00 shinyapps[316507]: observed search bar = ga 
+2018-04-05T23:53:39.544804+00:00 shinyapps[316507]: 
+2018-04-05T23:53:39.544879+00:00 shinyapps[316507]: observed search bar = galatea 
+2018-04-05T23:53:39.581599+00:00 shinyapps[316507]: galatea = 176.7434113 -38.4119391 
+2018-04-05T23:53:39.590607+00:00 shinyapps[316507]: 
+2018-04-05T23:53:39.590733+00:00 shinyapps[316507]: observed location = 176.7434113 -38.4119391 
+2018-04-05T23:53:41.452472+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:53:41.452582+00:00 shinyapps[316507]: 2005-06 (5 Farms) 2006-07 (8 Farms) 2007-08 (15 Farms) 2008-09 (18 Farms) 2009-10 (49 Farms) 2010-11 (46 Farms) 2011-12 (48 Farms) 2012-13 (61 Farms) 2013-14 (62 Farms) 2014-15 (58 Farms) 2015-16 (66 Farms) 2016-17 (46 Farms) 
+2018-04-05T23:53:41.462305+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:53:41.453613+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.464375+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:53:41.453696+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:53:41.470473+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:53:41.456522+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:53:41.473973+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:41.456622+00:00 shinyapps[316507]: Low (0-50m) (27 Farms) Middle (50-200m) (10 Farms) High (200m+) (9 Farms) 
+2018-04-05T23:53:41.457496+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.457569+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:41.487240+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:41.461256+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:41.487317+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:53:41.461351+00:00 shinyapps[316507]: Gley (12 Farms) Pumice (20 Farms) Organic (1 Farms) Recent (13 Farms) 
+2018-04-05T23:53:41.487404+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:41.462230+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.487492+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:41.494124+00:00 shinyapps[316507]: nrow(data) =  46 
+2018-04-05T23:53:41.497917+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:41.504844+00:00 shinyapps[316507]: yqr1 = 15.25426592 yqr1 = 14.7200205013695 yqr1 = 15.7885113386305 
+2018-04-05T23:53:41.486987+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.515190+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.6111706341593 yqr1 = 12.8866662738407 
+2018-04-05T23:53:41.487143+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:41.519861+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:41.531290+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:41.608402+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:41.696056+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:41.508968+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:41.526205+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9824386716003 yqr1 = 12.5153982363997 
+2018-04-05T23:53:41.681531+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:41.704565+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:41.712950+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:41.910890+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.910965+00:00 shinyapps[316507]: observed input$soil = G N O U 
+2018-04-05T23:53:41.911991+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.912060+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:53:41.912430+00:00 shinyapps[316507]: Warning in my$elev != input$elev :
+2018-04-05T23:53:41.912431+00:00 shinyapps[316507]:   longer object length is not a multiple of shorter object length
+2018-04-05T23:53:41.913324+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.914149+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.913401+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:53:41.914225+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:53:41.918106+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:41.918201+00:00 shinyapps[316507]: Gley (12 Farms) Pumice (13 Farms) Organic (1 Farms) Recent (11 Farms) 
+2018-04-05T23:53:41.919495+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:41.922821+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.922897+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:53:41.927295+00:00 shinyapps[316507]: 
+2018-04-05T23:53:41.927445+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:41.927531+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:41.927609+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:53:41.927694+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) 
+2018-04-05T23:53:41.927773+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:41.933518+00:00 shinyapps[316507]: nrow(data) =  37 
+2018-04-05T23:53:41.937359+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:41.943894+00:00 shinyapps[316507]: yqr1 = 15.4861994 yqr1 = 14.8549906543616 yqr1 = 16.1174081456384 
+2018-04-05T23:53:41.947938+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:41.953894+00:00 shinyapps[316507]: yqr1 = 12.03746048 yqr1 = 11.8332390483921 yqr1 = 12.2416819116079 
+2018-04-05T23:53:42.340098+00:00 shinyapps[316507]: 
+2018-04-05T23:53:42.340174+00:00 shinyapps[316507]: observed input$soil = G M O R 
+2018-04-05T23:53:42.341014+00:00 shinyapps[316507]: 
+2018-04-05T23:53:42.341088+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:42.341475+00:00 shinyapps[316507]: Warning in my$elev != input$elev :
+2018-04-05T23:53:42.341475+00:00 shinyapps[316507]:   longer object length is not a multiple of shorter object length
+2018-04-05T23:53:42.342679+00:00 shinyapps[316507]: 
+2018-04-05T23:53:42.342768+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:42.346935+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:53:42.348002+00:00 shinyapps[316507]: 
+2018-04-05T23:53:42.348085+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:53:42.350302+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:42.347040+00:00 shinyapps[316507]: Gley (12 Farms) Pumice (20 Farms) Organic (1 Farms) Recent (13 Farms) 
+2018-04-05T23:53:42.356173+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:42.356249+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:42.356035+00:00 shinyapps[316507]: 
+2018-04-05T23:53:42.356316+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:53:42.356390+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:53:42.356465+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:42.361908+00:00 shinyapps[316507]: nrow(data) =  46 
+2018-04-05T23:53:42.365540+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:42.372322+00:00 shinyapps[316507]: yqr1 = 15.25426592 yqr1 = 14.6913985250557 yqr1 = 15.8171333149443 
+2018-04-05T23:53:42.382011+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:42.389138+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.5692478665021 yqr1 = 12.9285890414979 
+2018-04-05T23:53:42.399868+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9931932966042 yqr1 = 12.5046436113958 
+2018-04-05T23:53:42.393724+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:42.404895+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:42.481277+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:42.550482+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:42.564784+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:42.574276+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:42.583628+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:51.336507+00:00 shinyapps[316507]: 
+2018-04-05T23:53:51.373809+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:53:51.400502+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:51.336582+00:00 shinyapps[316507]: observed input$elev = Middle (50-200m) High (200m+) 
+2018-04-05T23:53:51.379670+00:00 shinyapps[316507]: 
+2018-04-05T23:53:51.406537+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.6009106716575 yqr1 = 12.8969262363425 
+2018-04-05T23:53:51.337004+00:00 shinyapps[316507]: Warning in my$elev != input$elev :
+2018-04-05T23:53:51.379812+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:51.410751+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:51.337005+00:00 shinyapps[316507]:   longer object length is not a multiple of shorter object length
+2018-04-05T23:53:51.379904+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:51.416657+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9892958355362 yqr1 = 12.5085410724638 
+2018-04-05T23:53:51.338209+00:00 shinyapps[316507]: 
+2018-04-05T23:53:51.379977+00:00 shinyapps[316507]: analyse for soil = M R 
+2018-04-05T23:53:51.421509+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:51.338286+00:00 shinyapps[316507]: observed my$elev = Middle (50-200m) High (200m+) 
+2018-04-05T23:53:51.380054+00:00 shinyapps[316507]: analyse for elev = Middle (50-200m) High (200m+) 
+2018-04-05T23:53:51.493773+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:51.373803+00:00 shinyapps[316507]: my$soil_here = 2 
+2018-04-05T23:53:51.380133+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:51.571512+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:51.373805+00:00 shinyapps[316507]: Pumice (17 Farms) Recent (2 Farms) 
+2018-04-05T23:53:51.385819+00:00 shinyapps[316507]: nrow(data) =  19 
+2018-04-05T23:53:51.585710+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:51.373807+00:00 shinyapps[316507]: 
+2018-04-05T23:53:51.389643+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:51.373808+00:00 shinyapps[316507]: observed my$soil =  M R 
+2018-04-05T23:53:51.396294+00:00 shinyapps[316507]: yqr1 = 12.968493112 yqr1 = 12.5977382964775 yqr1 = 13.3392479275225 
+2018-04-05T23:53:51.594010+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:51.602260+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:53:55.824093+00:00 shinyapps[316507]: 
+2018-04-05T23:53:55.824167+00:00 shinyapps[316507]: observed input$soil = M 
+2018-04-05T23:53:55.825347+00:00 shinyapps[316507]: 
+2018-04-05T23:53:55.825415+00:00 shinyapps[316507]: observed my$soil =  M 
+2018-04-05T23:53:55.835884+00:00 shinyapps[316507]: nrow(data) =  17 
+2018-04-05T23:53:55.839631+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:53:55.878191+00:00 shinyapps[316507]: yqr1 = 12.968493112 yqr1 = 12.3474546799428 yqr1 = 13.5895315440572 
+2018-04-05T23:53:55.882362+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:53:55.888523+00:00 shinyapps[316507]: yqr1 = 12.20296447 yqr1 = 12.0010980742934 yqr1 = 12.4048308657066 
+2018-04-05T23:53:55.892784+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:53:55.898761+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.9713552707115 yqr1 = 12.5264816372885 
+2018-04-05T23:53:55.909608+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:53:55.983325+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:53:56.055499+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:53:56.069471+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:55.829684+00:00 shinyapps[316507]: 
+2018-04-05T23:53:55.829835+00:00 shinyapps[316507]: analyse for location = 176.7434113 -38.4119391 
+2018-04-05T23:53:55.829918+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:53:55.829984+00:00 shinyapps[316507]: analyse for soil = M 
+2018-04-05T23:53:55.830057+00:00 shinyapps[316507]: analyse for elev = Middle (50-200m) High (200m+) 
+2018-04-05T23:53:55.830135+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:53:56.078246+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:53:56.087002+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:54:02.031041+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:54:02.040051+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:54:02.048659+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:54:52.418668+00:00 shinyapps[316507]: 
+2018-04-05T23:54:52.418738+00:00 shinyapps[316507]: observed search bar = M 
+2018-04-05T23:54:54.392689+00:00 shinyapps[316507]: Murupara = 176.701097 -38.458989 
+2018-04-05T23:54:54.478708+00:00 shinyapps[316507]: 
+2018-04-05T23:54:54.478899+00:00 shinyapps[316507]: observed location = 176.701097 -38.458989 
+2018-04-05T23:54:56.318849+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:54:56.318972+00:00 shinyapps[316507]: 2005-06 (5 Farms) 2006-07 (8 Farms) 2007-08 (14 Farms) 2008-09 (16 Farms) 2009-10 (45 Farms) 2010-11 (45 Farms) 2011-12 (41 Farms) 2012-13 (56 Farms) 2013-14 (53 Farms) 2014-15 (48 Farms) 2015-16 (58 Farms) 2016-17 (39 Farms) 
+2018-04-05T23:54:56.349816+00:00 shinyapps[316507]: 
+2018-04-05T23:54:56.349935+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:54:56.353369+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:54:56.353463+00:00 shinyapps[316507]: Low (0-50m) (23 Farms) Middle (50-200m) (7 Farms) High (200m+) (9 Farms) 
+2018-04-05T23:54:56.385969+00:00 shinyapps[316507]: 
+2018-04-05T23:54:56.386091+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:54:56.390444+00:00 shinyapps[316507]: my$soil_here = 4 
+2018-04-05T23:54:56.391461+00:00 shinyapps[316507]: 
+2018-04-05T23:54:56.391540+00:00 shinyapps[316507]: observed my$soil =  G M O R 
+2018-04-05T23:54:56.393673+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:54:56.400025+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:54:56.403899+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:54:56.536344+00:00 shinyapps[316507]: 
+2018-04-05T23:54:56.390541+00:00 shinyapps[316507]: Gley (10 Farms) Pumice (17 Farms) Organic (1 Farms) Recent (11 Farms) 
+2018-04-05T23:54:56.536530+00:00 shinyapps[316507]: analyse for location = 176.701097 -38.458989 
+2018-04-05T23:54:56.536608+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:54:56.536679+00:00 shinyapps[316507]: analyse for soil = G M O R 
+2018-04-05T23:54:56.536757+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:54:56.536828+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:54:56.542740+00:00 shinyapps[316507]: nrow(data) =  39 
+2018-04-05T23:54:56.546482+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:54:56.553197+00:00 shinyapps[316507]: yqr1 = 15.229323881 yqr1 = 14.6457322532243 yqr1 = 15.8129155087757 
+2018-04-05T23:54:56.557282+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:54:56.563984+00:00 shinyapps[316507]: yqr1 = 12.248918454 yqr1 = 11.5716181255199 yqr1 = 12.9262187824801 
+2018-04-05T23:54:56.568495+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:54:57.698587+00:00 shinyapps[316507]: 
+2018-04-05T23:54:57.698664+00:00 shinyapps[316507]: observed input$soil = G M O R 
+2018-04-05T23:54:58.827872+00:00 shinyapps[316507]: 
+2018-04-05T23:54:58.827958+00:00 shinyapps[316507]: observed search bar = G 
+2018-04-05T23:54:59.860101+00:00 shinyapps[316507]: 
+2018-04-05T23:54:59.860191+00:00 shinyapps[316507]: observed search bar = Gisbo 
+2018-04-05T23:54:59.878265+00:00 shinyapps[316507]: OVER_QUERY_LIMIT:Gisbo+New+Zealand
+2018-04-05T23:54:59.880495+00:00 shinyapps[316507]: [1] "try 2 ..."
+2018-04-05T23:55:02.311137+00:00 shinyapps[316507]: my$season_here = 3 
+2018-04-05T23:55:02.311251+00:00 shinyapps[316507]: 2012-13 (1 Farms) 2013-14 (1 Farms) 2015-16 (1 Farms) 
+2018-04-05T23:55:02.312471+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.312554+00:00 shinyapps[316507]: observed my$season = 2015-16 
+2018-04-05T23:55:02.316102+00:00 shinyapps[316507]: my$elev_here = 1 
+2018-04-05T23:55:02.316216+00:00 shinyapps[316507]: Middle (50-200m) (3 Farms) 
+2018-04-05T23:55:02.317204+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.322334+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.322406+00:00 shinyapps[316507]: observed my$soil =  L 
+2018-04-05T23:55:02.324527+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:55:02.317292+00:00 shinyapps[316507]: observed my$elev = Middle (50-200m) 
+2018-04-05T23:55:02.321315+00:00 shinyapps[316507]: my$soil_here = 1 
+2018-04-05T23:55:02.321413+00:00 shinyapps[316507]: Allophanic (3 Farms) 
+2018-04-05T23:55:02.331204+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:55:02.341595+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.335235+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:55:02.341779+00:00 shinyapps[316507]: analyse for location = 178.017649 -38.662334 
+2018-04-05T23:55:02.341861+00:00 shinyapps[316507]: analyse for season = 2015-16 
+2018-04-05T23:55:02.356768+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:55:02.361465+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:55:02.341933+00:00 shinyapps[316507]: analyse for soil = L 
+2018-04-05T23:55:02.342009+00:00 shinyapps[316507]: analyse for elev = Middle (50-200m) 
+2018-04-05T23:55:02.342075+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:55:02.348184+00:00 shinyapps[316507]: nrow(data) =  1 
+2018-04-05T23:55:02.352194+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:55:02.366561+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:55:02.509997+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.510065+00:00 shinyapps[316507]: observed search bar = Gisborne 
+2018-04-05T23:55:02.890281+00:00 shinyapps[316507]: Gisborne = 178.017649 -38.662334 
+2018-04-05T23:55:02.901052+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.901124+00:00 shinyapps[316507]: observed my$season = NA 
+2018-04-05T23:55:02.901978+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.902047+00:00 shinyapps[316507]: observed my$elev = NA 
+2018-04-05T23:55:02.902837+00:00 shinyapps[316507]: 
+2018-04-05T23:55:02.902911+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:55:03.007232+00:00 shinyapps[316507]: observed input$soil = L 
+2018-04-05T23:55:03.005297+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.005399+00:00 shinyapps[316507]: observed input$season = 2015-16 
+2018-04-05T23:55:03.007165+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.008405+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.008480+00:00 shinyapps[316507]: observed input$elev = Middle (50-200m) 
+2018-04-05T23:55:03.009754+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.009849+00:00 shinyapps[316507]: observed my$season = 2015-16 
+2018-04-05T23:55:03.013570+00:00 shinyapps[316507]: my$elev_here = 1 
+2018-04-05T23:55:03.013752+00:00 shinyapps[316507]: Middle (50-200m) (3 Farms) 
+2018-04-05T23:55:03.014838+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.014918+00:00 shinyapps[316507]: observed my$soil =  NA 
+2018-04-05T23:55:03.015711+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.015790+00:00 shinyapps[316507]: observed my$elev = Middle (50-200m) 
+2018-04-05T23:55:03.020404+00:00 shinyapps[316507]: my$soil_here = 1 
+2018-04-05T23:55:03.020487+00:00 shinyapps[316507]: Allophanic (3 Farms) 
+2018-04-05T23:55:03.021951+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:55:03.027056+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:55:03.031009+00:00 shinyapps[316507]: observed my$soil =  L 
+2018-04-05T23:55:03.036128+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.030936+00:00 shinyapps[316507]: 
+2018-04-05T23:55:03.036261+00:00 shinyapps[316507]: analyse for location = 178.017649 -38.662334 
+2018-04-05T23:55:03.036337+00:00 shinyapps[316507]: analyse for season = 2015-16 
+2018-04-05T23:55:03.036409+00:00 shinyapps[316507]: analyse for soil = L 
+2018-04-05T23:55:03.036482+00:00 shinyapps[316507]: analyse for elev = Middle (50-200m) 
+2018-04-05T23:55:03.036551+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:55:03.042456+00:00 shinyapps[316507]: nrow(data) =  1 
+2018-04-05T23:55:03.051608+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:55:03.046828+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:55:03.056447+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:55:03.063088+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:55:08.136186+00:00 shinyapps[316507]: Stratford = 174.2838238 -39.3370781 
+2018-04-05T23:55:08.145549+00:00 shinyapps[316507]: 
+2018-04-05T23:55:08.145674+00:00 shinyapps[316507]: observed location = 174.2838238 -39.3370781 
+2018-04-05T23:55:09.991045+00:00 shinyapps[316507]: my$season_here = 12 
+2018-04-05T23:55:09.991170+00:00 shinyapps[316507]: 2005-06 (18 Farms) 2006-07 (8 Farms) 2007-08 (34 Farms) 2008-09 (44 Farms) 2009-10 (30 Farms) 2010-11 (26 Farms) 2011-12 (23 Farms) 2012-13 (41 Farms) 2013-14 (56 Farms) 2014-15 (52 Farms) 2015-16 (55 Farms) 2016-17 (15 Farms) 
+2018-04-05T23:55:09.992310+00:00 shinyapps[316507]: 
+2018-04-05T23:55:09.992386+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:55:09.995463+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:55:09.995571+00:00 shinyapps[316507]: Low (0-50m) (5 Farms) Middle (50-200m) (7 Farms) High (200m+) (3 Farms) 
+2018-04-05T23:55:10.001776+00:00 shinyapps[316507]: 
+2018-04-05T23:55:10.001858+00:00 shinyapps[316507]: observed my$soil =  L M R 
+2018-04-05T23:55:10.004127+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:55:10.010414+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:55:10.013888+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:55:09.996568+00:00 shinyapps[316507]: 
+2018-04-05T23:55:09.996653+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:55:10.000695+00:00 shinyapps[316507]: my$soil_here = 3 
+2018-04-05T23:55:10.019367+00:00 shinyapps[316507]: 
+2018-04-05T23:55:10.019507+00:00 shinyapps[316507]: analyse for location = 174.2838238 -39.3370781 
+2018-04-05T23:55:10.019584+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:55:10.049185+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:55:10.019797+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:55:10.061894+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:55:10.000798+00:00 shinyapps[316507]: Allophanic (13 Farms) Pumice (1 Farms) Recent (1 Farms) 
+2018-04-05T23:55:10.019652+00:00 shinyapps[316507]: analyse for soil = L M R 
+2018-04-05T23:55:10.140471+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:55:10.019724+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:55:10.025323+00:00 shinyapps[316507]: nrow(data) =  15 
+2018-04-05T23:55:10.028991+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:55:10.035175+00:00 shinyapps[316507]: yqr1 = 15.063123794 yqr1 = 13.8449127419323 yqr1 = 16.2813348460677 
+2018-04-05T23:55:10.039149+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:55:10.044957+00:00 shinyapps[316507]: yqr1 = 15.063123794 yqr1 = 13.9059600198839 yqr1 = 16.2202875681161 
+2018-04-05T23:55:10.199027+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:55:10.209588+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:55:10.216123+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:55:10.222641+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:55:10.908777+00:00 shinyapps[316507]: 
+2018-04-05T23:55:10.908856+00:00 shinyapps[316507]: observed input$season = 2016-17 
+2018-04-05T23:55:10.909672+00:00 shinyapps[316507]: 
+2018-04-05T23:55:10.909784+00:00 shinyapps[316507]: observed input$soil = L M R 
+2018-04-05T23:55:10.910606+00:00 shinyapps[316507]: 
+2018-04-05T23:55:10.910678+00:00 shinyapps[316507]: observed input$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:55:19.020564+00:00 shinyapps[316507]: ZERO_RESULTS:Ble+New+Zealand
+2018-04-05T23:55:19.022827+00:00 shinyapps[316507]: [1] "try 2 ..."
+2018-04-05T23:55:19.043611+00:00 shinyapps[316507]: ZERO_RESULTS:Ble+New+Zealand
+2018-04-05T23:55:19.045889+00:00 shinyapps[316507]: [1] "try 3 ..."
+2018-04-05T23:55:19.062222+00:00 shinyapps[316507]: OVER_QUERY_LIMIT:Ble+New+Zealand
+2018-04-05T23:55:19.064569+00:00 shinyapps[316507]: [1] "try 4 ..."
+2018-04-05T23:55:19.086839+00:00 shinyapps[316507]: Ble = NA NA 
+2018-04-05T23:55:19.083283+00:00 shinyapps[316507]: ZERO_RESULTS:Ble+New+Zealand
+2018-04-05T23:55:19.844418+00:00 shinyapps[316507]: 
+2018-04-05T23:55:19.844494+00:00 shinyapps[316507]: observed search bar = Blenheim 
+2018-04-05T23:55:19.862235+00:00 shinyapps[316507]: OVER_QUERY_LIMIT:Blenheim+New+Zealand
+2018-04-05T23:55:19.864490+00:00 shinyapps[316507]: [1] "try 2 ..."
+2018-04-05T23:55:22.174162+00:00 shinyapps[316507]: my$season_here = 10 
+2018-04-05T23:55:22.174277+00:00 shinyapps[316507]: 2005-06 (2 Farms) 2006-07 (4 Farms) 2007-08 (10 Farms) 2009-10 (1 Farms) 2010-11 (10 Farms) 2011-12 (9 Farms) 2012-13 (6 Farms) 2013-14 (7 Farms) 2014-15 (1 Farms) 2016-17 (10 Farms) 
+2018-04-05T23:55:22.175372+00:00 shinyapps[316507]: 
+2018-04-05T23:55:22.175446+00:00 shinyapps[316507]: observed my$season = 2016-17 
+2018-04-05T23:55:22.178865+00:00 shinyapps[316507]: my$elev_here = 3 
+2018-04-05T23:55:22.178957+00:00 shinyapps[316507]: Low (0-50m) (6 Farms) Middle (50-200m) (3 Farms) High (200m+) (1 Farms) 
+2018-04-05T23:55:22.179960+00:00 shinyapps[316507]: 
+2018-04-05T23:55:22.180041+00:00 shinyapps[316507]: observed my$elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:55:22.184486+00:00 shinyapps[316507]: my$soil_here = 2 
+2018-04-05T23:55:22.184583+00:00 shinyapps[316507]: Brown (6 Farms) Recent (4 Farms) 
+2018-04-05T23:55:22.185579+00:00 shinyapps[316507]: 
+2018-04-05T23:55:22.185650+00:00 shinyapps[316507]: observed my$soil =  B R 
+2018-04-05T23:55:22.188149+00:00 shinyapps[316507]: render season selector 
+2018-04-05T23:55:22.194669+00:00 shinyapps[316507]: render elev selector 
+2018-04-05T23:55:22.198212+00:00 shinyapps[316507]: render soil selector 
+2018-04-05T23:55:22.203779+00:00 shinyapps[316507]: 
+2018-04-05T23:55:22.203918+00:00 shinyapps[316507]: analyse for location = 173.9612498 -41.5134425 
+2018-04-05T23:55:22.204000+00:00 shinyapps[316507]: analyse for season = 2016-17 
+2018-04-05T23:55:22.204066+00:00 shinyapps[316507]: analyse for soil = B R 
+2018-04-05T23:55:22.204144+00:00 shinyapps[316507]: analyse for elev = Low (0-50m) Middle (50-200m) High (200m+) 
+2018-04-05T23:55:22.204211+00:00 shinyapps[316507]: analyse for adjust = 100 kgN/ha/y 
+2018-04-05T23:55:22.210007+00:00 shinyapps[316507]: nrow(data) =  10 
+2018-04-05T23:55:22.218999+00:00 shinyapps[316507]: Warning in rq.fit.br(x, y, tau = tau, ...) : Solution may be nonunique
+2018-04-05T23:55:22.214046+00:00 shinyapps[316507]: window =  60  km 
+2018-04-05T23:55:22.221365+00:00 shinyapps[316507]: yqr1 = 11.45620092 yqr1 = 10.1024744194585 yqr1 = 12.8099274205414 
+2018-04-05T23:55:22.226027+00:00 shinyapps[316507]: window =  40  km 
+2018-04-05T23:55:22.232704+00:00 shinyapps[316507]: yqr1 = 12.61006613 yqr1 = 10.9857791458002 yqr1 = 14.2343531141998 
+2018-04-05T23:55:22.237232+00:00 shinyapps[316507]: window =  20  km 
+2018-04-05T23:55:22.249426+00:00 shinyapps[316507]: render stacked histograms 
+2018-04-05T23:55:22.335098+00:00 shinyapps[316507]: Warning: Removed 3 rows containing non-finite values (stat_bin).
+2018-04-05T23:55:22.389922+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_rect).
+2018-04-05T23:55:22.399624+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:55:22.405507+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_vline).
+2018-04-05T23:55:22.411414+00:00 shinyapps[316507]: Warning: Removed 3 rows containing missing values (geom_text).
+2018-04-05T23:55:23.013984+00:00 shinyapps[316507]: observed input$soil = B R 
+2018-04-05T23:55:23.013906+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.179537+00:00 shinyapps[316507]: Warning in res[i] <- withCallingHandlers(if (tangle) process_tangle(group) else process_group(group),  :
+2018-04-06T00:02:30.179539+00:00 shinyapps[316507]:   number of items to replace is not a multiple of replacement length
+2018-04-06T00:02:30.222529+00:00 shinyapps[316507]:  $ include: logi FALSE
+2018-04-06T00:02:30.199513+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.222591+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.221399+00:00 shinyapps[316507]: List of 1
+2018-04-06T00:02:30.199514+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.199516+00:00 shinyapps[316507]: processing file: pasture16.rmd
+2018-04-06T00:02:30.220108+00:00 shinyapps[316507]:   |                                                                         |                                                                 |   0%  |                                                                         |......                                                           |   9%
+2018-04-06T00:02:30.220180+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.220181+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.220451+00:00 shinyapps[316507]:   |                                                                         |............                                                     |  18%
+2018-04-06T00:02:30.221120+00:00 shinyapps[316507]: label: setup (with options) 
+2018-04-06T00:02:30.597207+00:00 shinyapps[316507]: Rows dropped with missing data = 11512 
+2018-04-06T00:02:30.598377+00:00 shinyapps[316507]: Rows remaining = 5296 
+2018-04-06T00:02:30.716915+00:00 shinyapps[316507]:   |                                                                         |..................                                               |  27%
+2018-04-06T00:02:30.716977+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.716985+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.717238+00:00 shinyapps[316507]:   |                                                                         |........................                                         |  36%
+2018-04-06T00:02:30.717864+00:00 shinyapps[316507]: label: unnamed-chunk-1 (with options) 
+2018-04-06T00:02:30.718071+00:00 shinyapps[316507]: List of 2
+2018-04-06T00:02:30.718672+00:00 shinyapps[316507]:  $ echo  : logi FALSE
+2018-04-06T00:02:30.719101+00:00 shinyapps[316507]:  $ engine: chr "css"
+2018-04-06T00:02:30.719138+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.719880+00:00 shinyapps[316507]:   |                                                                         |..............................                                   |  45%
+2018-04-06T00:02:30.719923+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.719924+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.720154+00:00 shinyapps[316507]:   |                                                                         |...................................                              |  55%
+2018-04-06T00:02:30.720694+00:00 shinyapps[316507]: label: input_pane (with options) 
+2018-04-06T00:02:30.720862+00:00 shinyapps[316507]: List of 2
+2018-04-06T00:02:30.721423+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-06T00:02:30.721930+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-06T00:02:30.721968+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.752192+00:00 shinyapps[316507]: initialise location 
+2018-04-06T00:02:30.766609+00:00 shinyapps[316507]: render main panel 
+2018-04-06T00:02:30.775294+00:00 shinyapps[316507]: render sidebar 
+2018-04-06T00:02:30.807979+00:00 shinyapps[316507]:   |                                                                         |.........................................                        |  64%
+2018-04-06T00:02:30.808043+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.808045+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.808291+00:00 shinyapps[316507]:   |                                                                         |...............................................                  |  73%
+2018-04-06T00:02:30.808878+00:00 shinyapps[316507]: label: output_calculations (with options) 
+2018-04-06T00:02:30.809093+00:00 shinyapps[316507]: List of 3
+2018-04-06T00:02:30.809718+00:00 shinyapps[316507]:  $ eval   : logi TRUE
+2018-04-06T00:02:30.810227+00:00 shinyapps[316507]:  $ echo   : logi FALSE
+2018-04-06T00:02:30.810725+00:00 shinyapps[316507]:  $ warning: logi TRUE
+2018-04-06T00:02:30.810736+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.817940+00:00 shinyapps[316507]:   |                                                                         |.....................................................            |  82%
+2018-04-06T00:02:30.817987+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.817988+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.818227+00:00 shinyapps[316507]:   |                                                                         |...........................................................      |  91%
+2018-04-06T00:02:30.818799+00:00 shinyapps[316507]: label: output_plot (with options) 
+2018-04-06T00:02:30.819011+00:00 shinyapps[316507]: List of 2
+2018-04-06T00:02:30.819600+00:00 shinyapps[316507]:  $ eval: logi TRUE
+2018-04-06T00:02:30.820112+00:00 shinyapps[316507]:  $ echo: logi FALSE
+2018-04-06T00:02:30.820148+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.834607+00:00 shinyapps[316507]:   |                                                                         |.................................................................| 100%
+2018-04-06T00:02:30.834653+00:00 shinyapps[316507]:   ordinary text without R code
+2018-04-06T00:02:30.834654+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.834854+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.835611+00:00 shinyapps[316507]: output file: /tmp/Rtmpp0ZcTD/pasture16.knit.md
+2018-04-06T00:02:30.835611+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.841165+00:00 shinyapps[316507]: /opt/connect/ext/pandoc/pandoc +RTS -K512m -RTS /tmp/Rtmpp0ZcTD/pasture16.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/Rtmpp0ZcTD/file4a86b4b8426.html --smart --email-obfuscation none --standalone --section-divs --template /usr/local/lib/R/site-library/prettydoc/resources/templates/architect.html --highlight-style pygments --id-prefix section- --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --css /tmp/Rtmpp0ZcTD/file4a86b4b8426_files/style.css 
+2018-04-06T00:02:30.894061+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.894064+00:00 shinyapps[316507]: Output created: /tmp/Rtmpp0ZcTD/file4a86b4b8426.html
+2018-04-06T00:02:30.927136+00:00 shinyapps[316507]: 
+2018-04-06T00:02:30.927301+00:00 shinyapps[316507]: observed location = 175.619105 -40.386396 

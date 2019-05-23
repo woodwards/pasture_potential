@@ -1,0 +1,4 @@
+The app requires a text file named google.api containing a valid Google API key. 
+
+https://developers.google.com/places/web-service/usage-and-billing
+

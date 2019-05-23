@@ -1,0 +1,56 @@
+---
+title: "Leaflet Reprex"
+runtime: shiny
+output: html_document
+---
+
+```{r echo=FALSE, eval=TRUE}
+library(leaflet) 
+
+my <- reactiveValues(long=175.619105, lat=-40.386396)
+v <- reactiveValues(zoom=5, minzoom=5, maxzoom=15, long=NA, lat=NA) 
+
+isolate({
+  cat(file=stderr(), paste("initialise location"), "\n")
+  v$long <- my$long
+  v$lat <- my$lat
+})
+
+#### make initial map ####
+output$map <- renderLeaflet({
+  cat(file=stderr(), paste("render leaflet"), "\n")
+  
+    isolate({ # prevent redraw if arguments change
+
+      leaflet(options=leafletOptions(minZoom=v$minzoom, maxZoom=v$maxzoom)) %>%
+        setView(v$long, v$lat, zoom=v$zoom)  %>%
+        addTiles() %>% # default map
+        addMarkers(my$long, my$lat, "layer1", options=pathOptions(clickable=FALSE)) 
+      
+    })
+
+  }) # end renderLeaflet
+
+#### ui ####
+shinyUI(fluidPage(
+      leafletOutput("map", width="100%", height=480) # can manipulate size here
+)) # end fluidPage
+
+#### react to mouse clicks ####
+observeEvent(input$map_click, {
+  
+  cat(file=stderr(), "\n")
+  cat(file=stderr(), paste("observed map_click"), "\n")    
+
+  click <- input$map_click
+  my$long <- click$lng
+  my$lat <- click$lat
+
+  # mark map
+  leafletProxy("map", deferUntilFlush=FALSE) %>%
+    addMarkers(my$long, my$lat, "layer1", options=pathOptions(clickable=FALSE)) 
+  
+}) # end observe mouse click
+
+```
+

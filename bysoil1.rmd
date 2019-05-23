@@ -1,0 +1,509 @@
+---
+title: "Pasture Potential"
+runtime: shiny
+output: html_document
+---
+
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE}
+#### load libraries ####
+library(tidyverse)
+library(leaflet) # interactive map
+#library(ggmap) # googlemap
+library(cowplot)
+library(geosphere)
+library(proj4) # warning masked by rgdal
+library(KernSmooth) # for contouring
+library(sp) # spatial polygons
+library(quantreg)
+#library(broom) # used to convert spatial data to tibble
+library(rgdal) 
+
+#### these objects are available to all sessions ####
+# this is good place to put global data or utility functions
+# you can change them (for every session) but you have to use the <<- operator
+
+#### read multiyear data and tidy up ####
+file_name <- "DairyBaseForPowerBIsoils.csv"
+data_all <- read_csv(file_name, na=c("","NaN","NA"), col_types=cols(Concatbest="c")) # force "Concatbest" to chr
+n <- names(data_all)
+data_all$Region <- as.factor(data_all$Region)
+data_all$Season <- as.factor(data_all$Season)
+
+# check duplicate columns for inconsistencies
+# mismatch <- which(data_all$"DBID" != data_all$"DBID_1")
+# mismatch <- which(data_all$"Dairy Company(s)" != data_all$"Dairy Company(s)_1") # INCONSISTENT!
+
+# rename useful columns
+n[n=="Pasture and Crop eaten t DM/ha"] <- "pasture_eaten"
+n[n=="Region"] <- "region"
+n[n=="Season"] <- "season"
+n[n=="SupplyClean"] <- "supply_number"
+names(data_all) <- n
+
+# remove rows missing essential information
+data_all <- data_all %>% 
+  select(pasture_eaten, region, season, supply_number, long, lat, nzsc_order) %>%
+  filter((pasture_eaten>0) && (long>0) && (lat<0)) %>%
+  drop_na()
+
+# create season and soil list
+seasons <- sort(unique(data_all$season))
+soils <- sort(unique(data_all$nzsc_order))
+
+# create data point map/contours for plotting on leaflet
+# https://gis.stackexchange.com/questions/168886/r-how-to-build-heatmap-with-the-leaflet-package
+data_pts <- unique(data_all[c("long", "lat")])
+kde <- bkde2D(data.matrix(data_pts), bandwidth=c(0.1, 0.1), gridsize=c(100,100))
+CL <- contourLines(kde$x1 , kde$x2 , kde$fhat) # contour lines (list)
+LEVS <- as.factor(sapply(CL, `[[`, "level")) # contour levels (vector)
+NLEV <- length(levels(LEVS)) # number of levels 
+pgons <- lapply(1:length(CL), function(i) # convert to polygons (ID=i is actually the level)
+    Polygons(list(Polygon(cbind(CL[[i]]$x, CL[[i]]$y))), ID=i))
+spgons = SpatialPolygons(pgons)
+spgon_cols <- topo.colors(NLEV, NULL)[LEVS]
+
+# convert spatialPolygons to data frame for use in ggplot
+#spgonsdf <- tidy(spgons, region=ID)
+
+# calculate NZTM2000 coordinates for farm locations
+proj4string <- "+proj=tmerc +lat_0=0.0 +lon_0=173.0 +k=0.9996 +x_0=1600000.0 +y_0=10000000.0 +datum=WGS84 +units=m"
+nzgd <- data.matrix(data_all[,c("long", "lat")])
+nztm <- proj4::project(xy=nzgd, proj=proj4string)
+temp <- proj4::project(xy=nzgd, proj=proj4string, inverse=TRUE)
+data_all$east <- nztm[,1]
+data_all$north <- nztm[,2]
+# relative locations
+# data_all$x <- (nztm[,1]-nztm[rr,1])/1000 
+# data_all$y <- (nztm[,2]-nztm[rr,2])/1000
+
+#### define some constants ####
+trim <- 0.0 # rqss fails near tails if insufficient data
+probs <- seq(trim, 1-trim, 0.02)
+nprobs <- length(probs)
+windows <- c(60,40,20)
+minn <- 4L # minimum number of farms in a window for analysis
+cb9sron <- c('#88CCee', '#CC6677', '#DDCC77', '#117733', '#332288', '#AA4499', '#44AA99', '#999933', '#882255')
+nz <- map_data("nz") # nz coastline data
+
+# gets a list of default ggplot colours
+gg_colour_hue <- function(n) {
+  hues = seq(15, 375, length = n + 1)
+  hcl(h = hues, l = 65, c = 100)[1:n]
+}
+window_cols <- gg_colour_hue(length(windows))
+
+```
+
+Pasture is a fundamental component of profitable dairy systems. In general, the more pasture you can grow and feed to your animals, the more profitable your system will be. This tool allows you to compare your pasture produced and consumed with pasture produced and consumed on other farms in your region. This can indicate whether there is potential for you to increase pasture production and intake, and hence profitability.
+
+# Where are You?
+
+Please select which season of data to analyse, and click your location on the map. The contours show the availability of data.
+
+```{r echo=FALSE, eval=TRUE}
+#### shiny ui widgets to get inputs (reactive values) ####
+# Note: Unlike Shiny Apps, Interactive R Markdown Documents are do not require ui and server, 
+#       the whole document is treated as a server.
+  
+  # Note: my itself is not a reactive object!
+  my <- reactiveValues(name='You Are Here', 
+                       # long=172.833333, lat=-41.5, # Nelson
+                       long=175.619105, lat=-40.386396, # Massey
+                       # long=174.865530, lat=-41.259256, # Wellington
+                       # long=175.352116, lat=-37.781841, # DairyNZ
+                       distortion=1, east=NA, north=NA, 
+                       season=tail(seasons, 1), 
+                       soil=as.list(soils))
+  
+  v <- reactiveValues(zoom=5, minzoom=5, maxzoom=15, long=NA, lat=NA) 
+  
+  reactive({
+    # this will redraw the leaflet
+    cat(file=stderr(), paste('initialise map centre'), "\n")
+    v$long <- isolate(my$long)
+    v$lat <- isolate(my$lat)
+  })
+  
+  # observeEvent(input$zoomin, {
+  #   v$zoom <- ifelse(v$zoom<v$maxzoom, v$zoom+1, v$zoom)
+  # }) # end observeEvent
+  # 
+  # observeEvent(input$zoomout, {
+  #   v$zoom <- ifelse(v$zoom>v$minzoom, v$zoom-1, v$zoom)
+  # }) # end observeEvent
+  
+  # titlePanel("Where are You?")
+  output$seasonSelector <- renderUI({
+    cat(file=stderr(), paste('render season selector'), "\n")
+    selectInput("season", h4("Which Season?"), as.list(seasons), selected=my$season)
+  })
+
+  output$soilSelector <- renderUI({
+    cat(file=stderr(), paste('render soil selector'), "\n")
+    selectInput("soil", h4("Which Soil?"), as.list(soils), selected=as.list(soils), selectize=FALSE, multiple=TRUE)
+  })
+  
+  # Make your initial map
+  # https://stackoverflow.com/questions/34348737/r-leaflet-how-to-click-on-map-and-add-a-circle
+  output$map <- renderLeaflet({
+    cat(file=stderr(), paste('render leaflet'), "\n")
+    
+      isolate({ # prevent redraw if arguments change
+        leaflet(spgons, options=leafletOptions(minZoom=v$minzoom, maxZoom=v$maxzoom)) %>%
+          setView(v$long, v$lat, zoom=v$zoom)  %>%
+          addTiles() %>% # default map
+          addPolygons(data=spgons, color=spgon_cols, weight=0, options=pathOptions(clickable=FALSE)) %>%
+          addMarkers(my$long, my$lat, 'layer1') %>%
+          addCircles(my$long, my$lat, layerId=as.character(windows), radius=windows*1000, 
+                     color=window_cols, weight=4, fill=NA) 
+          # addCircles(my$long, my$lat, 'layer2', radius=windows[1]*1000, weight=2, fill=NA) %>%
+          # addCircles(my$long, my$lat, 'layer3', radius=windows[2]*1000, weight=2, fill=NA) %>%
+          # addCircles(my$long, my$lat, 'layer4', radius=windows[3]*1000, weight=2, fill=NA)
+      })
+
+    }) # end renderLeaflet
+  
+  #### define ui ####
+  sidebarLayout(
+    
+    sidebarPanel(
+      uiOutput("seasonSelector"), # this control is created in the server
+      uiOutput("soilSelector") # this control is created in the server
+      # actionButton("go", "Go!")
+    ), # end sidebarPanel
+    
+    mainPanel(
+      leafletOutput("map")
+    ) # end mainPanel
+    
+  ) # end sidebarLayout
+
+  # Observe mouse clicks 
+  # see also https://rstudio.github.io/leaflet/shiny.html
+  observeEvent(input$map_click, {
+    cat(file=stderr(), paste('map_click'), "\n")    
+
+    click <- input$map_click
+    clat <- click$lat
+    clng <- click$lng
+    address <- revgeocode(c(clng,clat))
+    my$long <- clng
+    my$lat <- clat
+    # v$long <- input$map_lng
+    # v$lat <- input$map_lat
+    # v$zoom <- input$map_zoom
+    # 
+    leafletProxy('map') %>%
+      addMarkers(my$long, my$lat, 'layer1') %>%
+      addCircles(my$long, my$lat, layerId=as.character(windows), radius=windows*1000, color=window_cols, weight=4, fill=NA) 
+    
+  })
+
+  # this ignores NULL values 
+  observeEvent(input$season, { 
+    cat(file=stderr(), paste('season selection', input$season), "\n")
+    my$season <- input$season
+  })
+
+  observeEvent(input$soil, { 
+    cat(file=stderr(), paste('soil selection'), "\n")
+    cat(file=stderr(), paste(input$soil), "\n")
+    my$soil <- input$soil
+  })
+  
+```
+
+<!-- # Your Neighbourhood -->
+
+```{r eval=TRUE, echo=FALSE, warning=TRUE}
+
+calc <- reactive({
+
+    req(input$season) # this prevents it running before input$season is defined
+    req(input$soil) # this prevents it running before input$soil is defined
+    
+    # reactive dependence on these variables (they triggering recalc)
+    # my$long # triggered by "map" _click
+    # my$lat # triggered by "map" _click
+    #my$season <- input$season #  FIXME causing problems because input$season not initialised!
+
+    my$name <- paste('You (', as.character(my$season), ')', sep='')
+  
+    cat(file=stderr(), paste('my$long my$lat =', my$long, my$lat), "\n")
+    cat(file=stderr(), paste('my$season =', my$season), "\n")
+
+  # filter. need to check there's enough data!
+  data_sel <-  data_all %>% 
+    filter(season==my$season) 
+
+  # location for map centre
+  nzgd <- data.matrix(c(my$long, my$lat))
+  nztm <- proj4::project(xy=nzgd, proj=proj4string)
+  my$east <- nztm[,1]
+  my$north <- nztm[,2]
+
+  # calculate aspect ratio near my farm
+  nzgd <- data.matrix(tibble(long=c(my$long, my$long, my$long-0.5, my$long+0.5),
+                             lat=c(my$lat-0.5, my$lat+0.5, my$lat, my$lat)))
+  nztm <- proj4::project(xy=nzgd, proj=proj4string)
+  my$distortion <- (max(nztm[,2])-min(nztm[,2]))/(max(nztm[,1])-min(nztm[,1]))
+
+  # calculate distances ####
+  # we need to use rowwise()  because distm is not vectorised, I think, although rowwise() is deprecated
+  # http://www.expressivecode.org/2014/12/17/mutating-using-functions-in-dplyr/
+  data_sel <- data_sel %>% 
+    rowwise() %>% 
+    mutate(
+         dist = distm(c(my$long, my$lat), c(long, lat), fun=distHaversine), # this needs rowwise()
+         dist = dist/1000 # km
+  )
+
+  # filter by distance
+  data_sel <- data_sel %>% 
+    filter(dist < max(windows)) %>%
+    filter(nzsc_order %in% my$soil)
+
+  # empty data frames for loop
+  farms <- tibble(x=numeric(), y=numeric(), east=numeric(), north=numeric(), long=numeric(), lat=numeric(),
+                  pasture=numeric(), dist=numeric(), window=numeric(), radius=factor())
+  sampcdf <- tibble(probs=numeric(), quants=numeric(), radius=factor())
+  samppdf <- tibble(pasture=numeric(), window=numeric(), radius=factor(),
+                    q=numeric(), qr=numeric(), qrlower=numeric(), qrupper=numeric())
+  circles <- tibble(east=numeric(), north=numeric(), radius=factor())
+  
+  # circle function
+  circle_fun <- function(centre=c(0,0), r=1, npoints=100){
+    tt <- seq(0, 2*pi, length.out=npoints)
+    xx <- centre[1] + r * cos(tt)
+    yy <- centre[2] + r * sin(tt)
+    return(tibble(x=xx, y=yy))
+  }    
+    
+  # loop through decreasing window sizes 
+  for (window in windows) {
+
+    # select data within window
+    data_window <- data_sel %>% filter(dist < window)
+    n <- nrow(data_window)
+    code <- paste(window,' km (',n,' Farms)', sep='')
+
+    # calculate circle
+    circle <- circle_fun(centre=c(my$east, my$north), r=window*1000, npoints=100)
+    nztm <- data.matrix(circle[,c('x', 'y')])
+    nzgd <- proj4::project(xy=nztm, proj=proj4string, inverse=TRUE)
+    circle$long <- nzgd[,1]
+    circle$lat <- nzgd[,2]
+
+    # save selected farms for plot
+    if (n >= 1) {
+      farms <- rbind(farms, tibble(east=data_window$east, north=data_window$north,
+                                 long=data_window$long, lat=data_window$lat,
+                                 pasture=data_window$pasture_eaten,
+                                 dist=data_window$dist, window=window, radius=as.factor(code)))
+    }
+    
+    circles <- rbind(circles, tibble(long=circle$long, lat=circle$lat, radius=as.factor(code)))
+
+    # calculate quantile
+#    qr1 <- rq(formula=pasture_eaten ~ east + north, tau=0.9, data=data_window) # linear quantile regression
+    qr1 <- rq(formula=pasture_eaten ~ 1, tau=0.9, data=data_window) # linear quantile regression
+    se_method <- "boot" # how condience intervals are calculated, some methods more robust
+    yqr1<- predict(qr1, tibble(east=my$east, north=my$north), interval='confidence', level=0.95, se=se_method)
+    q90 <- quantile(data_window$pasture_eaten, 0.9, type=1) # also calc simple q90
+
+    cat(file=stderr(), paste('yqr1 =', yqr1), "\n")
+    cat(file=stderr(), paste('q90 =', q90), "\n")
+
+    # save sample quantiles if enough data to be sensible
+    if (n >= minn) {
+      quants <- quantile(data_window$pasture_eaten, probs=probs, type=8) # see documentation for type=?
+      sampcdf <- rbind(sampcdf, tibble(probs=probs, quants=quants, radius=as.factor(code)))
+      samppdf <- rbind(samppdf, tibble(pasture=data_window$pasture_eaten, window=window, radius=as.factor(code),
+                       q=q90, qr=yqr1[1], qrlower=yqr1[2], qrupper=yqr1[3]))
+    }
+
+  } # next window size
+    
+#   # little function to return a quantile
+#   qfn <- function(x){
+# #    q <- quantile(x, 0.9, na.rm=TRUE)
+#     q <- quantile(x, 0.9)
+#     return(q)
+#   }
+# 
+#   # add quantiles to data
+#   samppdf <- samppdf %>%
+#     group_by(radius) %>%
+#     mutate(q=qfn(pasture))
+
+  # biggest circle
+  circle <- circle_fun(centre=c(my$east, my$north), r=max(windows)*1000, npoints=100)
+  nztm <- data.matrix(circle[,c('x', 'y')])
+  nzgd <- proj4::project(xy=nztm, proj=proj4string, inverse=TRUE)
+  circle$long <- nzgd[,1]
+  circle$lat <- nzgd[,2]
+
+  # return results
+  return(list(data_sel=data_sel, circles=circles, circle=circle, farms=farms, sampcdf=sampcdf, samppdf=samppdf))
+  
+})
+
+```
+
+
+
+```{r eval=FALSE, echo=FALSE}
+# for testing
+  renderTable({ head(calc()$data_sel) })
+  renderTable({ reactiveValuesToList(my) }) # my is not a data table
+  renderTable({ head(calc()$circles) })
+  renderTable({ head(calc()$farms) })
+  renderTable({ head(calc()$sampcdf) })
+  renderTable({ head(calc()$samppdf) })
+
+```
+
+<!-- This is the area you have selected. The nearby farms which have data are shown on the second map. -->
+
+```{r eval=FALSE, echo=FALSE}
+
+# nz map
+# output$plot1 <- renderPlot({
+# 
+#   data_sel <- calc()$data_sel
+#   circle <- calc()$circle
+#   title <- paste('Farm Locations near', my$name)
+#   title <- 'Location'
+#   
+#   # plot nearby locations on a map
+#   plot1 <- ggplot() +
+#     labs(title=title, x='Longitude', y='Latitude', colour="Region") +
+# #    geom_point(data=data_sel, mapping=aes(x=long,y=lat,colour=region),shape=16,size=2) +
+#     scale_colour_manual(values=cb9sron) +
+#     coord_fixed() + # fix aspect ratio
+#     theme_cowplot() +
+#     geom_path(data=nz, mapping=aes(x=long,y=lat,group=group), colour='grey') +
+#     geom_path(data=circle, mapping=aes(x=long,y=lat), colour='red') +
+#     coord_map() +
+#     geom_point(mapping=aes(x=my$long,y=my$lat),shape=4,size=2,stroke=2,colour='black') +
+#     panel_border(colour='black')
+# 
+#     plot1
+# 
+# })
+
+# local googlemap
+output$plot2 <- renderPlot({
+
+  circles <- calc()$circles
+  farms <- calc()$farms
+  my_temp <- tibble(long=my$long, lat=my$lat) # avoid error casued by using my in geom_point()
+  
+  # get googlemap
+  # google map
+  # my_map <- get_googlemap(center=c(175.352116, lat=-37.781841), zoom=9, scale=2, maptype='hybrid') 
+  my_map <- get_googlemap(center=c(my$long, my$lat), zoom=9, scale=2, maptype='hybrid') 
+  plot2 <- ggmap(my_map, extent='panel', darken=c(0.4, 'white'))  # 'normal' adds a white border
+  
+  title <- paste('Farm Locations near', my$name)
+  title <- 'Map'
+  
+  # construct area plot
+  plot2 <- plot2 +
+    labs(title=title, x='East', y='North',
+         colour="Radius (km)", size="Pasture Eaten") +
+    coord_fixed(ratio=my$distortion) + # fix aspect ratio
+    theme_cowplot() +
+    panel_border(colour='black')  
+
+    plot2 <- plot2 +
+      geom_polygon(data=spgonsdf, aes(y=lat, x=long, group=group, fill=id)) +
+      scale_fill_manual(values=spgon_cols) +
+      guides(fill=FALSE)
+
+    # this works
+    # ggplot(data=spgons_df, aes(y=lat, x=long, group=group, fill=id)) +
+    # geom_polygon() +
+    # guides(fill=FALSE)
+  
+  #  area plot
+  plot2 <- plot2 +
+    geom_path(data=circles, mapping=aes(x=long, y=lat, group=radius, colour=radius), size=1.2) +
+#    geom_point(data=farms, mapping=aes(x=long, y=lat, size=pasture, group=radius, colour=radius)) +
+    geom_point(data=my_temp, mapping=aes(x=long, y=lat), shape=4, size=2, stroke=2, colour='black') +
+    theme(legend.position="bottom", legend.box='vertical') 
+
+  plot2
+
+})
+
+
+fluidPage({
+  fluidRow(
+      # column(width=4, 
+      #   plotOutput("plot1")
+      # ), # end column
+      column(width=8, 
+        plotOutput("plot2")
+      ) # end column
+    ) # end fluidRow
+})
+
+```
+
+This is the distribution of pasture produced and consumed within various distances of your location. The 90th percentile is also shown.
+
+```{r eval=TRUE, echo=FALSE}
+
+# stacked histograms
+output$plot7 <- renderPlot({
+
+  samppdf <- calc()$samppdf
+
+  breaks <- seq(floor(min(samppdf$pasture))-1, ceiling(max(samppdf$pasture))+1, 1)
+
+  cat(file=stderr(), paste('xlim =', min(breaks), max(breaks)), "\n")
+  
+  title_string <- paste('Pasture Eaten near', my$name)
+  
+  plot7 <- ggplot() +
+    labs(title=title_string, y='Number of Farms', x='Pasture Eaten (tDM '*ha^-1~y^-1*')', colour='Radius (km)') +
+    theme_cowplot() +
+  #  scale_y_continuous(breaks=c()) + # remove y-scale when too many facets
+    panel_border(colour='black') +  
+    theme(legend.position='none')
+  
+  if (nrow(samppdf)>0) { 
+  plot7 <- plot7 +
+    geom_rect(data=samppdf, mapping=aes(xmin=qrlower, xmax=qrupper, ymin=0, ymax=Inf), 
+              fill='lightcyan') +
+    geom_histogram(data=samppdf, mapping=aes(x=pasture, colour=radius), 
+                   fill=NA, size=1.1, binwidth=1) +
+    geom_vline(data=samppdf, mapping=aes(xintercept=qr), size=1.5, colour='lightcyan4', alpha=0.2) +
+    geom_vline(data=samppdf, mapping=aes(xintercept=q), size=1.5, colour='black') +
+    geom_text(data=samppdf, mapping=aes(x=q, y=4, label='90th'), hjust=0, nudge_x=0.1) +
+    facet_grid(radius ~ ., as.table=FALSE) + # as.table=FALSE reverses the order
+    theme(strip.background=element_blank(), strip.text.y=element_text(angle=0)) +
+    scale_x_continuous(breaks=breaks) +
+    coord_cartesian(xlim=c(min(breaks),max(breaks)))
+
+  }
+  
+  plot7
+
+}) # end renderPlot
+  
+fluidPage({
+    fluidRow(
+      plotOutput("plot7")
+    ) # end fluidRow
+})
+
+```
+

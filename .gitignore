@@ -1,0 +1,31 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+DairyBaseForPowerBI.csv
+DairyBaseForPowerBIsoils.csv
+DairyStatsToSpatialDistricts.csv
+Farm locations all.csv
+NZDS.csv
+OADdata.csv
+Soil Order NZSC Soil classification.xlsx
+SpatialDistrictsToDairyStats.csv
+1213csv.csv
+shapefiles
+rsconnect
+DairyBaseForPowerBIdem.csv
+NZL1_msk_alt.grd
+NZL1_msk_alt.gri
+NZL1_msk_alt.vrt
+NZL2_msk_alt.grd
+NZL2_msk_alt.gri
+NZL2_msk_alt.vrt
+dem
+joined.rds
+data_all.tsv
+google.api
+google.api.dnz
+google.api.dnz2
+google.api.sjrw
+joined_comp.rds
+.Rproj.user
