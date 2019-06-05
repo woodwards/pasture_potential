@@ -34,23 +34,7 @@ googlekey <- readLines("google.api") # text file with the API key
 # you can change them (for every session) but you have to use the <<- operator
 
 # read multiyear data and tidy up
-data_all <- readRDS("joined.rds") %>%
-	plyr::mutate(pasture_eaten=as.numeric(pasture_and_crop_eaten_t_dm_ha),
-				 region=as.factor(region),
-				 season=as.factor(season),
-				 slope=slope,
-				 aspect=aspect,
-				 nitrogen_applied=as.numeric(nitrogen_applied_for_year_l2),
-				 topo=topo_position_index,
-				 soil=as.character(nzsc_order))
-data_all <- data_all %>%
-	dplyr::select(farm_number, pasture_eaten, region, season, long, lat, soil, elev,
-				  slope, aspect, topo, nitrogen_applied)
-temp <- nrow(data_all)
-data_all <- data_all %>% tidyr::drop_na() # drops a lot of rows!
-cat(file=stderr(), paste("Rows dropped with missing data =", temp-nrow(data_all), "\n"))
-cat(file=stderr(), paste("Rows remaining =", nrow(data_all), "\n"))
-# write_tsv(data_all, "data_all.tsv") # dump text version
+data_all <- readRDS("joined_small.rds")
 
 # add elevation factor
 data_all <- data_all %>%

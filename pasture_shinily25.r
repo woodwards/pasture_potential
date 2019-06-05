@@ -202,6 +202,35 @@ css <- "
 }
 "
 
+# https://community.rstudio.com/t/shiny-selectinput-selected-null/8672/2
+myselectInput = function (inputId, label, choices, selected = NULL, multiple = FALSE, 
+                          selectize = TRUE, width = NULL, size = NULL) 
+{
+  selected <- restoreInput(id = inputId, default = selected)
+  choices <- shiny:::choicesWithNames(choices)
+  if (!is.null(selected)) {
+    selected <- as.character(selected)
+  }
+  if (!is.null(size) && selectize) {
+    stop("'size' argument is incompatible with 'selectize=TRUE'.")
+  }
+  selectTag <- tags$select(id = inputId, class = if (!selectize) 
+    "form-control", size = size, 
+    if(is.null(selected)) 
+      HTML("<option style = 'display:none;' value disabled selected></option>")
+    else HTML(""), 
+    shiny:::selectOptions(choices, selected))
+  if (multiple) 
+    selectTag$attribs$multiple <- "multiple"
+  res <- div(class = "form-group shiny-input-container", style = if (!is.null(width)) 
+    paste0("width: ", validateCssUnit(width), ";"), shiny:::controlLabel(inputId, 
+                                                                         label), div(selectTag))
+  if (!selectize) 
+    return(res)
+  shiny:::selectizeIt(inputId, res, NULL, nonempty = !multiple && !("" %in% 
+                                                                      choices))
+}
+
 #### ui ####
 ui <- fluidPage(
 
@@ -282,19 +311,17 @@ server <- function(input, output) {
 
 	output$season_selector <- renderUI({
 		cat("render season selector\n")
-		selectInput("season", p("Production season?"), my$season_here, selected=my$season_default)
+		selectInput("season", p("Production season?"), my$season_here, my$season_default )
 	})
 
 	output$elev_selector <- renderUI({
 		cat("render elev selector\n")
-		selectInput("elev", p("Altitude over sea level?"), my$elev_here, selected=my$elev_default,
-					selectize=FALSE, multiple=TRUE)
+	  selectInput("elev", p("Altitude over sea level?"), my$elev_here, my$elev_default, multiple=TRUE, selectize=FALSE, size=3)
 	})
 
 	output$soil_selector <- renderUI({
 		cat("render soil selector\n")
-		selectInput("soil", p("Soil orders?"), my$soil_here, selected=my$soil_default,
-					selectize=FALSE, multiple=TRUE)
+		selectInput("soil", p("Soil orders?"), my$soil_here, my$soil_default, multiple=TRUE, selectize=FALSE)
 	})
 
 	output$nitrogen_checkbox <- renderUI({
