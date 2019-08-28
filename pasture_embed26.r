@@ -1,6 +1,10 @@
-# pasture_shinily##.r
+# pasture_embed##.r
 # Simon Woodward, DairyNZ Ltd, 2018-2019
 # uses leaflet, plotly, rdrop2
+# for embedding in DairyNZ website page
+# requires:
+#   google.api
+#   token.rds
 
 #### global ####
 
@@ -20,6 +24,7 @@ library(sp) # spatial polygons
 library(quantreg) # quantile regression
 library(googleway) # for geocoding
 library(rdrop2) # dropbox
+library(shinythemes)
 
 # start
 cat("\n")
@@ -122,28 +127,32 @@ gg_colour_hue <- function(n) {
 }
 window_cols <- gg_colour_hue(length(windows))
 
+#e0efd4 - light green
+#e6e6e6 - light grey
+#ddfcff - light blue
+
 # colours
 zzblack <- "black"
 zzwhite <- "white"
 zzslate <- "#353735"
 zzlightslate <- "#b5c2bc" # https://www.color-hex.com/color-palette/18977
-zzpaleslate <- "#f4f3f3" # https://www.color-hex.com/color-palette/18977
+zzpaleslate <- "#e6e6e6"
 zzmidslate <- "#c0c2c0"
 zzgreen <- "#69BE28"
 zzlightgreen <- "#74ff8b" # https://www.color-hex.com/color-palette/77235
-zzpalegreen <- "#abffad" # https://www.color-hex.com/color-palette/77235
+zzpalegreen <- "#e0efd4"
 zzmidgreen <- "#a5d77e"
 zzblue <- "#009AA6"
 zzlightblue <- "#94d1e4" # https://www.color-hex.com/color-palette/76824
-zzpaleblue <- "#bee3ee" # https://www.color-hex.com/color-palette/76824
+zzpaleblue <- "#ddfcff"
 zzmidblue <- "#6dc9d0"
 zzred <- "#ff0000" # https://www.color-hex.com/color-palette/76991
 zzdarkred <- "#b30033" # https://www.color-hex.com/color-palette/76991
 if (FALSE)
 {
-  scales::show_col(c(zzslate, zzlightslate, zzpaleslate, zzmidslate,
-                     zzgreen, zzlightgreen, zzpalegreen, zzmidgreen,
-                     zzblue,  zzlightblue,  zzpaleblue,  zzmidblue))
+  scales::show_col(c(zzslate, zzmidslate, zzlightslate, zzpaleslate, 
+                     zzgreen, zzmidgreen, zzlightgreen, zzpalegreen, 
+                     zzblue,  zzmidblue,  zzlightblue,  zzpaleblue))
 }
 
 # default_loc must be somewhere with data!!!
@@ -164,43 +173,51 @@ default_location <- ""
 css <- "
 /* fix leaflet cursor */
 .leaflet-container {
-  cursor: auto !important;
+  cursor: auto !important; 
+  border: 2px solid bordercolour
 }
-"
+.well {
+  background-color: white; 
+  border-color: white;
+}"
+
+css <- css %>% 
+  str_replace_all("bordercolour", zzblue)
+
+# https://excelquick.com/r-leaflet/leaflet-map-in-r-shiny/
+# style=str_replace("color: #fff; background-color: #990000; border-style: solid; border-color: #999999; margin: 5px", "#999999", zzblue),
 
 #### ui ####
 ui <- fluidPage(
 
 	tags$style(type='text/css', css),
-
-	sidebarLayout(
-
-		sidebarPanel(
-			tags$style(".well {background-color:#FFFFFF;border-color:#FFFFFF;}"), # worked!
-			cat("render sidebar\n"),
-			width=5, # 12ths of the panel
-			uiOutput("season_selector"),
-			uiOutput("elev_selector"),
-			uiOutput("soil_selector"),
-			uiOutput("nitrogen_checkbox")
-		), # end sidebarPanel
-
-		mainPanel(
-			cat("render main panel\n"),
-			width=7, # 12ths of the panel
-			leaflet::leafletOutput("map", width="100%", height=480), # can manipulate size here
-			absolutePanel(top=10, left=70, textInput("search_bar", "" , default_location, "75%")) # search bar
-		), # end mainPanel
-
-		position="right"
-
-	), # end sidebarLayout
-
+	theme = shinythemes::shinytheme("spacelab"),
+	
+	fluidRow(
+	  column(6,
+	         leaflet::leafletOutput("map", 
+	                                width="100%", 
+	                                height=455
+	         ), 
+	         absolutePanel(top=-7, 
+	                       left=70, 
+	                       textInput("search_bar", "" , default_location, "75%")
+	                       ) # search bar
+	  ),
+	  column(6,
+	         uiOutput("season_selector"),
+      		 uiOutput("elev_selector"),
+      		 uiOutput("soil_selector"),
+      		 uiOutput("nitrogen_checkbox")
+		)
+	), # fluidRow
+		
 	fluidRow(
 	  column(12,
-	         plotlyOutput("stacked_histogram")
+	         plotlyOutput("stacked_histogram",
+	                      width="90%")
 	  )
-	) # end fluidRow
+	) # fluidRow
 
 ) # end ui
 
@@ -248,22 +265,22 @@ server <- function(input, output) {
 
 	output$season_selector <- renderUI({
 		cat("render season selector\n")
-		selectInput("season", p("Production season?"), my$season_here, my$season_default )
+		selectInput("season", p("Production season?", style="line-height: 0.0;"), my$season_here, my$season_default )
 	})
 
 	output$elev_selector <- renderUI({
 		cat("render elev selector\n")
-	  selectInput("elev", p("Elevation above sea level?"), my$elev_here, my$elev_default, multiple=TRUE, selectize=FALSE, size=3)
+	  selectInput("elev", p("Elevation(s) above sea level?", style="line-height: 0.0;"), my$elev_here, my$elev_default, multiple=TRUE, selectize=FALSE, size=3)
 	})
 
 	output$soil_selector <- renderUI({
 		cat("render soil selector\n")
-		selectInput("soil", p("Soil orders?"), my$soil_here, my$soil_default, multiple=TRUE, selectize=FALSE, size=max(3, length(my$soil_here)))
+		selectInput("soil", p("Soil order(s)?", style="line-height: 0.0;"), my$soil_here, my$soil_default, multiple=TRUE, selectize=FALSE, size=max(3, length(my$soil_here)))
 	})
 
 	output$nitrogen_checkbox <- renderUI({
 		cat("render adjust checkbox\n")
-		selectInput("adjust", p("Nitrogen fertiliser applied?"), my$adjust_here, selected=my$adjust_default)
+		selectInput("adjust", p("Nitrogen fertiliser applied?", style="line-height: 0.0;"), my$adjust_here, selected=my$adjust_default)
 	})
 
 	#### make initial map ####
@@ -351,12 +368,6 @@ server <- function(input, output) {
 		cat("\n")
 		cat("observed location =", my$long, my$lat, "\n")
 
-		# calculate aspect ratio near my farm (not used)
-		# nzgd <- data.matrix(tibble(long=c(my$long, my$long, my$long-0.5, my$long+0.5),
-		#                            lat=c(my$lat-0.5, my$lat+0.5, my$lat, my$lat)))
-		# nztm <- proj4::project(xy=nzgd, proj=proj4string)
-		# my$distortion <- (max(nztm[,2])-min(nztm[,2]))/(max(nztm[,1])-min(nztm[,1]))
-
 		# location for map centre
 		nzgd <- data.matrix(c(my$long, my$lat))
 		nztm <- proj4::project(xy=nzgd, proj=proj4string)
@@ -364,14 +375,6 @@ server <- function(input, output) {
 		my$north <- nztm[,2]
 
 		# calculate distance 
-		# this is slow
-		# we need to use rowwise()  because distm is not vectorised, I think, although rowwise() is deprecated
-		# ungroup() removes the effect of rowwise()
-		# http://www.expressivecode.org/2014/12/17/mutating-using-functions-in-dplyr/
-		# data <- data_all %>%
-		#   rowwise() %>% # slow
-		#   mutate(dist=geosphere::distHaversine(c(my$long, my$lat), c(long, lat))/1000) %>%
-		#   ungroup()
 		data <- data_all %>%
 		  group_by(long, lat) %>%
 		  mutate(dist=geosphere::distHaversine(c(my$long, my$lat), c(long[1], lat[1]))/1000) %>%
@@ -588,27 +591,9 @@ server <- function(input, output) {
 
 		cat("nrow(data) = ", nrow(data), "\n")
 
-		# circle function
-		# circle_fun <- function(centre=c(0,0), r=1, npoints=100){
-		# 	tt <- seq(0, 2*pi, length.out=npoints)
-		# 	xx <- centre[1] + r * cos(tt)
-		# 	yy <- centre[2] + r * sin(tt)
-		# 	return(tibble(x=xx, y=yy))
-		# }
-
-		# prepare empty data frames for loop
-		# farms <- tibble(x=numeric(), y=numeric(), east=numeric(), north=numeric(), long=numeric(), lat=numeric(),
-		# 				pasture=numeric(), dist=numeric(), window=numeric(), radius=factor())
-		# sampcdf <- tibble(probs=numeric(), quants=numeric(), radius=factor())
-		# samppdf <- tibble(pasture=numeric(), window=numeric(), radius=factor(),
-		# 				  q=numeric(), qr=numeric(), qrlower=numeric(), qrupper=numeric())
-		# circles <- tibble(east=numeric(), north=numeric(), radius=factor())
-		# farms_list <- vector("list", length(windows))
-		# sampcdf_list <- vector("list", length(windows))
 		samppdf_list <- vector("list", length(windows))
 		all_radius <- vector("character", length(windows))
-		# circles_list <- vector("list", length(windows))
-		
+
 		# loop through decreasing window sizes
 		for (i in seq_along(windows)) {
 
@@ -620,28 +605,6 @@ server <- function(input, output) {
 			all_radius[[i]] <- code
 			
 			cat("window = ", window, " km", "\n")
-
-			# calculate circle
-			# circle <- circle_fun(centre=c(my$east, my$north), r=window*1000, npoints=100)
-			# nztm <- data.matrix(circle[,c("x", "y")])
-			# nzgd <- proj4::project(xy=nztm, proj=proj4string, inverse=TRUE)
-			# circle$long <- nzgd[,1]
-			# circle$lat <- nzgd[,2]
-
-			# save selected farms for plot
-			# if (n >= 1) {
-			# 	# farms <- rbind(farms, tibble(east=data_window$east, north=data_window$north,
-			# 	# 							 long=data_window$long, lat=data_window$lat,
-			# 	# 							 pasture=data_window$pasture_eaten,
-			# 	# 							 dist=data_window$dist, window=window, radius=as.factor(code)))
-			# 	farms_list[[i]] <- tibble(east=data_window$east, north=data_window$north,
-			# 	                          long=data_window$long, lat=data_window$lat,
-			# 	                          pasture=data_window$pasture_eaten,
-			# 	                          dist=data_window$dist, window=window, radius=as.factor(code))
-			# }
-
-			# circles <- rbind(circles, tibble(long=circle$long, lat=circle$lat, radius=as.factor(code)))
-			# circles_list[[i]] <- tibble(long=circle$long, lat=circle$lat, radius=as.factor(code))
 
 			# save sample quantiles if enough data to be sensible
 			if (n >= nmin) {
@@ -655,13 +618,6 @@ server <- function(input, output) {
 				cat(paste("yqr1 =", yqr1), "\n")
 				# cat(paste("q90 =", q90), "\n") # should be the same
 
-				# quants <- quantile(data_window$pasture_eaten, probs=probs, type=8) # see documentation for type=?
-				# sampcdf <- rbind(sampcdf, tibble(probs=probs, quants=quants, radius=as.factor(code)))
-				# sampcdf_list[[i]] <- tibble(probs=probs, quants=quants, radius=as.factor(code))
-				
-				# samppdf <- rbind(samppdf, tibble(pasture=data_window$pasture_eaten, window=window,
-				# 								 radius=as.factor(code),
-				# 								 q=q90, qr=yqr1[1], qrlower=yqr1[2], qrupper=yqr1[3]))
 				samppdf_list[[i]] <- tibble(pasture=data_window$pasture_eaten, 
 				                            window=window,
 				                            radius=code,
@@ -677,32 +633,14 @@ server <- function(input, output) {
 			                              q=NA, qr=NA, qrlower=NA, qrupper=NA)
 			}
 
-			# add a blank line (causes warnings but prevents errors) is this in the wrong place?
-			# samppdf <- rbind(samppdf, tibble(pasture=NA, window=window,
-			# 								 radius=as.factor(code),
-			# 								 q=NA, qr=NA, qrlower=NA, qrupper=NA))
-
 		} # next window size
 
 		samppdf <- dplyr::bind_rows(samppdf_list) %>% 
 		  mutate(radius=factor(radius, levels=all_radius))
 		  
-		# biggest circle
-		# circle <- circle_fun(centre=c(my$east, my$north), r=max(windows)*1000, npoints=100)
-		# nztm <- data.matrix(circle[,c("x", "y")])
-		# nzgd <- proj4::project(xy=nztm, proj=proj4string, inverse=TRUE)
-		# circle$long <- nzgd[,1]
-		# circle$lat <- nzgd[,2]
-
-		# return results as function for testing
-		#calc <- function() list(data=data, circles=circles, circle=circle, farms=farms, sampcdf=sampcdf, samppdf=samppdf)
-
-		# return results in a list
-		# return(list(data=data, circles=circles, circle=circle, farms=farms,
-		#             sampcdf=sampcdf, samppdf=samppdf))
-		return(list(samppdf=samppdf)) # only actually use samppdf
+		return(list(samppdf=samppdf)) 
 		
-	}) # end reaction to elev chaning, calculation of calc <- list(results)
+	}) # end reaction to elev changing, calculation of calc <- list(results)
 
 	#### create histograms ####
 
@@ -710,67 +648,6 @@ server <- function(input, output) {
 
 		samppdf <- calc()$samppdf # get data for histogram when calc() changes
 
-		isolate({
-
-			cat(paste("render stacked histograms"), "\n")
-		  # print(samppdf) # for diagnosis
-
-		# 	title_string <- paste("Pasture and Crop Eaten Near", my$name)
-		# 
-		# 	# create empty plot
-		# 	stacked_histogram <- ggplot() +
-		# 		labs(title=title_string, y="Number of Farms\n",
-		# 			 x="Pasture and Crop Eaten, tonnes DM per ha", colour="Radius (km)") +
-		# 		# theme_cowplot() +
-		# 		#theme_stata(base_size=16, scheme="s2color") +
-		# 		# ggthemes::theme_economist_white(base_size=12, horizontal=FALSE) +
-		# 		theme(axis.text.x=element_text(size=16, colour="grey35"),
-		# 			  axis.text.y=element_text(size=16, colour="grey35"),
-		# 			  strip.text=element_text(size=16, colour="grey35"),
-		# 			  plot.title=element_text(size=18, hjust=0.5, colour="grey35"),
-		# 			  axis.title=element_text(size=16, colour="grey35"),
-		# 			  axis.title.x=element_text(size=18, colour="grey35"),
-		# 			  panel.background=element_rect(fill="white")
-		# 		) +
-		# 		#scale_y_continuous(breaks=c()) + # remove y-scale when too many facets
-		# 		cowplot::panel_border(colour="grey35") +
-		# 		theme(legend.position="none")
-		# 
-		# 	# add histograms to empty plot
-		# 	if (nrow(tidyr::drop_na(samppdf))>0) {
-		# 
-		# 		breaks <- my$breaks
-		# 
-		# 		# cat(paste("xlim =", min(breaks), max(breaks)), "\n")
-		# 
-		# 		stacked_histogram <- stacked_histogram +
-		# 			geom_rect(data=samppdf, mapping=aes(xmin=qrlower, xmax=qrupper, ymin=0, ymax=Inf), fill="lightcyan") +
-		# 			geom_histogram(data=samppdf, mapping=aes(x=pasture, colour=radius), fill=NA, size=1.1, binwidth=1) +
-		# 			geom_vline(data=samppdf, mapping=aes(xintercept=qr), size=1.5, colour="lightcyan4", alpha=0.2) +
-		# 			geom_vline(data=samppdf, mapping=aes(xintercept=q), size=1.5, colour="blue4") +
-		# 			geom_text(data=samppdf, mapping=aes(x=q, y=4, label=sprintf("%.1f t", q)),
-		# 					  colour="blue4", size=6, hjust=0, nudge_x=0.2) +
-		# 			# facet_grid(radius ~ ., as.table=TRUE) + # as.table=FALSE reverses the order
-		# 			theme(strip.background=element_blank(), strip.text.y=element_text(angle=0)) +
-		# 			scale_x_continuous(breaks=breaks) +
-		# 			# scale_y_continuous(breaks=pretty_breaks(n=4)) +
-		# 			scale_y_continuous(breaks=NULL) +
-		# 			coord_cartesian(xlim=c(min(breaks),max(breaks)))
-		# 
-		# 	} # end add histograms to empty plot
-
-		}) # end isolate
-
-		# works
-		# plot_ly() %>% 
-		#   add_histogram(data=samppdf, x=~pasture, color=~radius) %>% 
-		#   layout(
-		#     title=list(text=paste("<b>Pasture and Crop Eaten Near", my$name, "</b>"),
-		#                font=list(size=18)),
-		#     xaxis=list(title="<b>Pasture and Crop Eaten, tonnes DM per ha</b>", gridcolor="grey"),
-		#     yaxis=list(title="<b>Number of Farms</b>", showgrid=FALSE)
-		#   ) 
-		 
 		# https://plot.ly/r/subplots/ 
 		all_radius=levels(samppdf$radius)
 		p <- vector("list", length(all_radius)) # list of subplots
@@ -795,35 +672,35 @@ server <- function(input, output) {
 		# bottom
 		p[[3]] <- samppdf %>% 
 		  filter(radius==all_radius[1]) %>% 
-		  plot_ly(colors=window_cols) %>%
-		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~radius[1], textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
+		  plot_ly(colors=window_cols, height=500) %>%
+		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~paste0("<b>", radius[1], "</b>"), textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
 		if (nfarms[1]>1){
   		p[[3]] <- p[[3]] %>% 
-  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins) %>% 
-  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target") %>% 
-  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("  %.1f t", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target")
+  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins, hoverinfo="x+y") %>% 
+  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target", hoverinfo="x+name") %>% 
+  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("<b>  %.1f t</b>", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target", hoverinfo="name+text")
 		}
 		p[[3]] <- p[[3]] %>%   
 		  layout(
 		    showlegend=FALSE,
 		    yaxis=list(range=yrange, showticklabels=FALSE, fixedrange=TRUE),
-		    xaxis=list(title="<b>Pasture and Crop Eaten, tonnes DM per ha</b>", gridcolor=I(gridcolor), range=xrange, dtick=1, fixedrange=TRUE)
+		    xaxis=list(title="<b>Pasture and Crop Eaten, tonnes DM per ha</b>", gridcolor=I(gridcolor), range=xrange, dtick=1, fixedrange=TRUE),
+		    margin=list(t=60)
 		  )
 		# middle
 		p[[2]] <- samppdf %>% 
 		  filter(radius==all_radius[2]) %>% 
-		  plot_ly(colors=window_cols) %>%
-		  animation_opts(1000, easing="elastic") %>% 
-		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~radius[1], textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
+		  plot_ly(colors=window_cols, height=500) %>%
+		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~paste0("<b>", radius[1], "</b>"), textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
 		if (nfarms[2]>1){
   		p[[2]] <- p[[2]] %>% 
-  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins) %>% 
-  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target") %>% 
-  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("  %.1f t", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target")
+  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins, hoverinfo="x+y") %>% 
+  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target", hoverinfo="x+name") %>% 
+  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("<b>  %.1f t</b>", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target", hoverinfo="name+text")
   		}
 		p[[2]] <- p[[2]] %>% 
 		  layout(
@@ -834,22 +711,22 @@ server <- function(input, output) {
 		# top
 		p[[1]] <- samppdf %>% 
 		  filter(radius==all_radius[3]) %>% 
-		  plot_ly(colors=window_cols) %>%
-		  animation_opts(1000, easing="elastic") %>% 
-		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~radius[1], textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
+		  plot_ly(colors=window_cols, height=500) %>%
+		  add_text(x=xrange[1]+(xrange[2]-xrange[1])*0.95, y=yrange[2]*0.9, text=~paste0("<b>", radius[1], "</b>"), textposition="middle left", color=I(radiuscolor), textfont=list(size=textsize)) 
 		if (nfarms[3]>1){
   		p[[1]] <- p[[1]] %>% 
-  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins) %>% 
-  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty") %>% 
-  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target") %>% 
-  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("  %.1f t", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target")
+  		  add_histogram(x=~pasture, color=~radius, opacity=0.5, xbins=xbins, hoverinfo="x+y") %>% 
+  		  add_segments(x=~qrlower[1], xend=~qrlower[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qrupper[1], xend=~qrupper[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), opacity=uncop, showlegend=FALSE, line=list(dash="dash"), name="uncertainty", hoverinfo="x+name") %>% 
+  		  add_segments(x=~qr[1], xend=~qr[1], y=yrange[1], yend=yrange[2], color=I(targetcolor), showlegend=FALSE, name="target", hoverinfo="x+name") %>% 
+  		  add_text(x=~qr[1], y=yrange[2]*0.7, text=~sprintf("<b>  %.1f t</b>", q[1]), color=I(targetcolor), textposition="middle right", textfont=list(size=textsize), name="target", hoverinfo="name+text")
 		}
 		p[[1]] <- p[[1]] %>% 
 		  layout(
 		    showlegend=FALSE,
+		    plot_bgcolor=zzpalegreen,
 		    yaxis=list(range=yrange, showticklabels=FALSE, fixedrange=TRUE),
-		    xaxis=list(gridcolor=I(gridcolor), range=xrange, dtick=1, fixedrange=TRUE),
+		    xaxis=list(gridcolor=I(gridcolor), range=xrange, dtick=1, fixedrange=TRUE, tickfont=list(size=14)),
 		    title=list(text=paste("<b>Pasture and Crop Eaten Near", my$name, "</b>"))
 		  )
 		p %>% 
@@ -857,15 +734,11 @@ server <- function(input, output) {
 		  # style(hoverinfo="none") %>% 
 		  config(displayModeBar=FALSE) 
 		  
-		# stacked_histogram
-		# plotly::ggplotly(stacked_histogram) 
-		# plotly::partial_bundle(plotly::toWebGL(plotly::ggplotly(stacked_histogram)))
-
 	}) # end renderPlot
 
 }
 
-# profvis::profvis(shiny::runApp("pasture_shiny19.r"))
+# profvis::profvis(shiny::runApp("pasture_embed26.r"))
 
 # this is how you run it
 shinyApp(ui = ui, server = server)
