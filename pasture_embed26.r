@@ -126,6 +126,7 @@ gg_colour_hue <- function(n) {
 	hcl(h = hues, l = 65, c = 100)[1:n]
 }
 window_cols <- gg_colour_hue(length(windows))
+window_cols <- window_cols[c(1,3,2)]
 
 #e0efd4 - light green
 #e6e6e6 - light grey
@@ -136,7 +137,8 @@ zzblack <- "black"
 zzwhite <- "white"
 zzslate <- "#353735"
 zzlightslate <- "#b5c2bc" # https://www.color-hex.com/color-palette/18977
-zzpaleslate <- "#e6e6e6"
+zzpaleslate <- "#e6e6e6" 
+zzverypaleslate <- "#fbf9f9"
 zzmidslate <- "#c0c2c0"
 zzgreen <- "#69BE28"
 zzlightgreen <- "#74ff8b" # https://www.color-hex.com/color-palette/77235
@@ -724,7 +726,7 @@ server <- function(input, output) {
 		p[[1]] <- p[[1]] %>% 
 		  layout(
 		    showlegend=FALSE,
-		    plot_bgcolor=zzpalegreen,
+		    plot_bgcolor=zzverypaleslate,
 		    yaxis=list(range=yrange, showticklabels=FALSE, fixedrange=TRUE),
 		    xaxis=list(gridcolor=I(gridcolor), range=xrange, dtick=1, fixedrange=TRUE, tickfont=list(size=14)),
 		    title=list(text=paste("<b>Pasture and Crop Eaten Near", my$name, "</b>"))
