@@ -176,7 +176,7 @@ css <- "
 /* fix leaflet cursor */
 .leaflet-container {
   cursor: auto !important; 
-  border: 2px solid bordercolour
+  border: 2px solid bordercolour;
 }
 .well {
   background-color: white; 
@@ -198,7 +198,7 @@ ui <- fluidPage(
 	fluidRow(
 	  column(6,
 	         leaflet::leafletOutput("map", 
-	                                width="100%", 
+	                                # width="100%", 
 	                                height=455
 	         ), 
 	         absolutePanel(top=-7, 
@@ -217,7 +217,10 @@ ui <- fluidPage(
 	fluidRow(
 	  column(12,
 	         plotlyOutput("stacked_histogram",
-	                      width="90%")
+	                      height="auto"
+	                      # ,
+	                      # width="90%"
+	                      )
 	  )
 	) # fluidRow
 
@@ -267,7 +270,7 @@ server <- function(input, output) {
 
 	output$season_selector <- renderUI({
 		cat("render season selector\n")
-		selectInput("season", p("Production season?", style="line-height: 0.0;"), my$season_here, my$season_default )
+	  selectInput("season", p("Production season?", style="line-height: 0.0; margin-top: 20px;"), my$season_here, my$season_default )
 	})
 
 	output$elev_selector <- renderUI({
@@ -734,7 +737,7 @@ server <- function(input, output) {
 		p %>% 
 		  subplot(nrows=3, shareX=TRUE, shareY=TRUE) %>% 
 		  # style(hoverinfo="none") %>% 
-		  config(displayModeBar=FALSE) 
+		  config(displayModeBar=FALSE, scrollZoom=TRUE) 
 		  
 	}) # end renderPlot
 
