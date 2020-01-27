@@ -1,0 +1,15 @@
+Pasture Potential Tool
+Simon Woodward, Mark Neal, DairyNZ Ltd, 2018-2020
+
+HOW TO UPDATE THE DAIRYBASE DATA:
+1. open the update_data R project, which is in an adjacent directory to the pasture_potential R project
+2. save your new DairyBase data file as dairybasesomething.csv in the update_data directory (remove empty rows and columns)
+3. in the script read_dairybase.r add the new data file to the code (non trivial) 
+4. source read_dairybase.r to create the dairybase.rds file
+5. save a copy of read_dairybase.r as read_dairybase_YYYYMMDD.r using today's date
+6. source join_databases.r to create the joined.rds and joined_small.rds files (this takes a long time)
+7. there is a report in join_databases_report.txt
+8. copy the joined_small.rds file to Dropbox (currently C:\Users\WoodwardS\Dropbox\pasture_potential_data_files)
+
+
+

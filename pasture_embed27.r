@@ -1,5 +1,8 @@
-# pasture_embed##.r
-# Simon Woodward, DairyNZ Ltd, 2018-2019
+# pasture_embed.r
+# Simon Woodward, Mark Neal, DairyNZ Ltd, 2018-2020
+#
+# See <How to update the data.txt> for instructions on how to update the data!
+#
 # uses leaflet, plotly, rdrop2
 # for embedding in DairyNZ website page
 # requires:
