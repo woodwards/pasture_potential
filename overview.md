@@ -1,4 +1,8 @@
-## Shiny Contest Submission: Pasture Potential Tool for improving dairy farm profitability and environmental impact
+## Pasture Potential Tool for improving dairy farm profitability and environmental impact
+
+**Author**: Simon Woodward
+
+**Affiliation**: DairyNZ Ltd, New Zealand
 
 **The Pasture Potential Tool**
 
